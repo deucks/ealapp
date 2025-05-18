@@ -1,0 +1,642 @@
+[
+  {
+    "instruction": "Your task:\n- Reply naturally, helping the student buy a train ticket.\n- Ask an easy follow-up question so the chat continues.\n- Give simple grammar feedback.\n- Decide to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Hello I want ticket.\" \nAssistant: \"Sure Where do you want to go?\"\nFeedback: \"Try I want a ticket.\"\n\nCurrent student input: \"I go to City A.\"",
+    "output": {
+      "reply": "Great City A is nice What day do you want to travel",
+      "feedback": "Say I want to go to City A",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Tomorrow",
+        "Today",
+        "Next Monday",
+        "This Friday",
+        "Saturday morning",
+        "Sunday",
+        "Next week",
+        "In two days",
+        "First of May",
+        "Second June",
+        "Any day",
+        "Soon",
+        "Next holiday",
+        "After school",
+        "Morning time",
+        "Evening time",
+        "No date yet",
+        "Today afternoon",
+        "Next Wednesday",
+        "Next month"
+      ]
+    }
+  },
+
+  {
+    "instruction": "Your task:\n- Reply naturally, helping the student buy a train ticket.\n- Ask an easy follow-up question.\n- Give simple grammar feedback.\n- Decide difficulty.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I need two tickets.\" \nAssistant: \"Okay Where are you traveling to?\"\nFeedback: \"Good number word.\"\n\nCurrent student input: \"We go City B tomorrow.\"",
+    "output": {
+      "reply": "Two tickets to City B tomorrow sounds good Do you want morning or afternoon train",
+      "feedback": "Add to before City B say We are going to City B tomorrow",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Morning train",
+        "Afternoon please",
+        "Evening train",
+        "Early morning",
+        "Late afternoon",
+        "Any time",
+        "Noon train",
+        "Night train",
+        "First train",
+        "Last train",
+        "Ten am train",
+        "One pm",
+        "Three pm",
+        "Five pm",
+        "Seven am",
+        "Eight am",
+        "After school",
+        "Before lunch",
+        "Lunch time",
+        "Not sure yet"
+      ]
+    }
+  },
+
+  {
+    "instruction": "Your task:\n- Reply naturally, helping the student buy a train ticket.\n- Ask an easy question.\n- Give simple grammar feedback.\n- Decide difficulty.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I want ticket to beach town.\" \nAssistant: \"Great Which beach town do you mean?\"\nFeedback: \"Add a article.\"\n\nCurrent student input: \"I mean Sunny Bay.\"",
+    "output": {
+      "reply": "Sunny Bay is popular What time do you wish to leave",
+      "feedback": "Good sentence",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Nine am",
+        "Ten am",
+        "Eleven am",
+        "Noon",
+        "One pm",
+        "Two pm",
+        "Three pm",
+        "Four pm",
+        "Five pm",
+        "Six am",
+        "Seven am",
+        "Any time",
+        "First train",
+        "Last train",
+        "Morning",
+        "Afternoon",
+        "Evening",
+        "Night",
+        "Unsure",
+        "Later"
+      ]
+    }
+  },
+
+  {
+    "instruction": "Your task:\n- Reply naturally, help buy ticket.\n- Ask easy question.\n- Provide grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Ticket please.\" \nAssistant: \"Sure Where will you start your trip?\"\nFeedback: \"Try May I have a ticket please.\"\n\nCurrent student input: \"Start at Central Station.\"",
+    "output": {
+      "reply": "Central Station okay How many tickets do you need",
+      "feedback": "Add I will start at Central Station",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "One ticket",
+        "Two tickets",
+        "Three tickets",
+        "Four tickets",
+        "Five tickets",
+        "Six tickets",
+        "Just one",
+        "Only two",
+        "Big family",
+        "Small group",
+        "Me only",
+        "Me and mom",
+        "Me and dad",
+        "Me and friend",
+        "Many friends",
+        "Whole class",
+        "Not sure",
+        "Need count",
+        "Few tickets",
+        "Couple tickets"
+      ]
+    }
+  },
+
+  {
+    "instruction": "Your task:\n- Reply naturally about ticket order.\n- Ask easy question.\n- Give simple feedback.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I go City C next Monday.\" \nAssistant: \"Okay a ticket for next Monday to City C.\"\nFeedback: \"Nice clear info.\"\n\nCurrent student input: \"Need return ticket Tuesday.\"",
+    "output": {
+      "reply": "So you want to come back on Tuesday Is that morning or afternoon",
+      "feedback": "Add a before return ticket say I need a return ticket on Tuesday",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Morning",
+        "Afternoon",
+        "Evening",
+        "Night",
+        "Early",
+        "Late",
+        "Any time",
+        "Before lunch",
+        "After lunch",
+        "Ten am",
+        "Noon",
+        "Two pm",
+        "Four pm",
+        "Six pm",
+        "Seven pm",
+        "First train",
+        "Last train",
+        "Not sure",
+        "Need advice",
+        "Flexible time"
+      ]
+    }
+  },
+
+  {
+    "instruction": "Your task:\n- Reply naturally assisting ticket purchase.\n- Ask easy question.\n- Grammar feedback.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Can I get child ticket.\" \nAssistant: \"Yes We have child tickets. Where to?\"\nFeedback: \"Add a please.\"\n\nCurrent student input: \"To Zoo Station tomorrow morning.\"",
+    "output": {
+      "reply": "Child ticket to Zoo Station tomorrow morning got it Do you want a window seat",
+      "feedback": "Say a child ticket",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Yes window seat",
+        "No aisle",
+        "Any seat",
+        "Window please",
+        "Aisle please",
+        "Middle ok",
+        "No need",
+        "Near door",
+        "Front seat",
+        "Back seat",
+        "Quiet car",
+        "Family area",
+        "Close to toilet",
+        "No choice",
+        "I dont know",
+        "Surprise me",
+        "First row",
+        "Last row",
+        "View side",
+        "No window"
+      ]
+    }
+  },
+
+
+  {
+    "instruction": "Your task:\n- Reply simply helping ticket buy.\n- Ask easy question.\n- Feedback.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I like fast train.\" \nAssistant: \"Fast train is quick! Which city are you visiting?\"\nFeedback: \"Good start.\"\n\nCurrent student input: \"Going to City D.\"",
+    "output": {
+      "reply": "Fast train to City D ok Which day do you plan to go",
+      "feedback": "Say I am going to City D",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "This Friday",
+        "Next Tuesday",
+        "Tomorrow",
+        "Today",
+        "Saturday",
+        "Sunday",
+        "Next week",
+        "Holiday time",
+        "Soon",
+        "After exam",
+        "Before holiday",
+        "Next month",
+        "Any day",
+        "Need date",
+        "Not sure",
+        "Ask parents",
+        "Morning day",
+        "Evening day",
+        "Middle week",
+        "First of June"
+      ]
+    }
+  },
+
+
+  {
+    "instruction": "Your task:\n- Simple reply help ticket.\n- Ask easy question.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Ticket for grandma.\" \nAssistant: \"Of course Where does grandma want to go?\"\nFeedback: \"Add a ticket for my grandma.\"\n\nCurrent student input: \"She go Flower Town.\"",
+    "output": {
+      "reply": "One ticket to Flower Town for grandma ok Does she need help to carry bags",
+      "feedback": "Say She is going to Flower Town",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Yes please help",
+        "No she fine",
+        "Small bag",
+        "Big suitcase",
+        "One bag",
+        "Two bags",
+        "Heavy bags",
+        "Light bags",
+        "No bags",
+        "Shopping bags",
+        "Need trolley",
+        "Need porter",
+        "Carry myself",
+        "Need wheelchair",
+        "She strong",
+        "Not sure",
+        "Ask later",
+        "Maybe help",
+        "Family helps",
+        "We help"
+      ]
+    }
+  },
+
+  {
+    "instruction": "Your task:\n- Simple ticket help.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"How much ticket to City E?\" \nAssistant: \"Standard ticket is ten dollars.\" \nFeedback: \"Good question!\"\n\nCurrent student input: \"Is there student price?\"",
+    "output": {
+      "reply": "Yes student ticket is eight dollars Would you like the student ticket",
+      "feedback": "Great question",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Yes please",
+        "No thanks",
+        "Need adult",
+        "Two student",
+        "One student",
+        "Not student",
+        "Maybe later",
+        "Ask teacher",
+        "Need id",
+        "Yes one",
+        "Yes two",
+        "Need think",
+        "Check money",
+        "Mom pays",
+        "Dad pays",
+        "Buy now",
+        "Buy later",
+        "Need info",
+        "Unsure",
+        "Okay"
+      ]
+    }
+  },
+
+  {
+    "instruction": "Your task:\n- Help buy ticket simply.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I want to sit with friend.\" \nAssistant: \"Sure What is your friend’s name on the ticket?\"\nFeedback: \"Nice sentence.\"\n\nCurrent student input: \"Friend name is Ali.\"",
+    "output": {
+      "reply": "Seat next to Ali is arranged Do you want to pay with cash or card",
+      "feedback": "Say My friend's name is Ali",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Pay cash",
+        "Use card",
+        "Pay later",
+        "Dad pays",
+        "Mom card",
+        "School card",
+        "Online pay",
+        "Phone pay",
+        "No card",
+        "Need atm",
+        "Gift voucher",
+        "Teacher pay",
+        "Ticket free",
+        "Not sure",
+        "Ask parent",
+        "Cash now",
+        "Card later",
+        "Bank app",
+        "Coin money",
+        "Pay now"
+      ]
+    }
+  },
+
+
+  {
+    "instruction": "Your task:\n- Assist ticket purchase easily.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I need return ticket same day.\" \nAssistant: \"Okay Out and back same day.\"\nFeedback: \"Great info.\"\n\nCurrent student input: \"Leave 9 am come back 5 pm.\"",
+    "output": {
+      "reply": "Leave at nine and return at five sounds good How many people need this ticket",
+      "feedback": "Add at before times",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Just me",
+        "Two people",
+        "Three people",
+        "Four people",
+        "Five people",
+        "Whole family",
+        "Mom and me",
+        "Dad and me",
+        "Friend group",
+        "Class team",
+        "Teacher and me",
+        "Sister and me",
+        "Brother and me",
+        "Only one",
+        "Not sure",
+        "Check later",
+        "Many kids",
+        "Small group",
+        "Big group",
+        "Only child"
+      ]
+    }
+  },
+
+  {
+    "instruction": "Your task:\n- Easy ticket help.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I travel with bike.\" \nAssistant: \"You can take bikes on the train.\"\nFeedback: \"Good note.\"\n\nCurrent student input: \"Need bike ticket too?\"",
+    "output": {
+      "reply": "Yes bike ticket is two dollars Do you still want to bring the bike",
+      "feedback": "Question good",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Yes bring bike",
+        "No leave bike",
+        "Rent bike there",
+        "Carry scooter",
+        "Bring skateboard",
+        "Only backpack",
+        "Take bike",
+        "No thanks",
+        "Need ask dad",
+        "Maybe later",
+        "Unsure",
+        "Bike broken",
+        "Bike heavy",
+        "Yes pay",
+        "No pay",
+        "Walk instead",
+        "Use bus",
+        "Use taxi",
+        "Need decide",
+        "Ok bring"
+      ]
+    }
+  },
+
+  {
+    "instruction": "Your task:\n- Help ticket.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"What platform leave?\" \nAssistant: \"City F train leaves platform 3.\" \nFeedback: \"Use does.\"\n\nCurrent student input: \"Need seat number?\"",
+    "output": {
+      "reply": "Seats are free choose any Do you want to sit near the door or window",
+      "feedback": "Use Do I need a seat number",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Near window",
+        "Near door",
+        "Any seat",
+        "Middle seat",
+        "Front seat",
+        "Back seat",
+        "Close to toilet",
+        "Quiet area",
+        "No prefer",
+        "Window view",
+        "Door easy",
+        "With friends",
+        "Next mom",
+        "Next dad",
+        "Group seat",
+        "Close aisle",
+        "Far aisle",
+        "Surprise me",
+        "Ask later",
+        "No idea"
+      ]
+    }
+  },
+
+  {
+    "instruction": "Your task:\n- Ticket support easy.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Is there food car?\" \nAssistant: \"Yes there is a small food car.\" \nFeedback: \"Great enquiry.\" \n\nCurrent student input: \"Can I order juice?\"",
+    "output": {
+      "reply": "Yes juice is on the menu Would you like to pay now or on the train",
+      "feedback": "Good question",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Pay now",
+        "Pay later",
+        "On train",
+        "Now please",
+        "Ask mom",
+        "Dad pays",
+        "Use card",
+        "Use cash",
+        "Gift coupon",
+        "No juice",
+        "Water only",
+        "Milk drink",
+        "Maybe later",
+        "Not thirsty",
+        "Yes juice",
+        "Orange juice",
+        "Apple juice",
+        "Grape juice",
+        "Any drink",
+        "Need think"
+      ]
+    }
+  },
+  {
+    "instruction": "Your task:\n- Easy ticket assistance.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I lost my ticket.\" \nAssistant: \"Oh no We can print a new one.\"\nFeedback: \"Good simple sentence.\"\n\nCurrent student input: \"Need pay again?\"",
+    "output": {
+      "reply": "No reprint is free Shall I print it now",
+      "feedback": "Say Do I need to pay again",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Yes please",
+        "No later",
+        "Print now",
+        "After class",
+        "Soon",
+        "Wait friend",
+        "Need ID",
+        "Need help",
+        "Thank you",
+        "Okay print",
+        "Dad coming",
+        "Mom coming",
+        "Teacher helps",
+        "Maybe later",
+        "Not sure",
+        "Reprint later",
+        "All good",
+        "Fine now",
+        "Yes now",
+        "No thanks"
+      ]
+    }
+  },
+  {
+    "instruction": "Your task:\n- Help primary student buy ticket.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I need seat for wheelchair.\" \nAssistant: \"We have a wheelchair space.\" \nFeedback: \"Great info.\"\n\nCurrent student input: \"Is ramp available?\"",
+    "output": {
+      "reply": "Yes a ramp is ready Do you need staff to help you board",
+      "feedback": "Correct question",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Yes help",
+        "No help",
+        "Mom helps",
+        "Dad helps",
+        "Friend helps",
+        "Staff helps",
+        "Teacher helps",
+        "I can",
+        "Need two people",
+        "One person ok",
+        "Not sure",
+        "Ask later",
+        "Maybe",
+        "Yes please",
+        "No thanks",
+        "Need advice",
+        "Need time",
+        "Board early",
+        "Board late",
+        "Okay"
+      ]
+    }
+  },
+  {
+    "instruction": "Your task:\n- Easy ticket order.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"How long trip to City G?\" \nAssistant: \"It takes two hours.\" \nFeedback: \"Good question.\"\n\nCurrent student input: \"Train has wifi?\"",
+    "output": {
+      "reply": "Yes free wifi is on the train Would you like a seat near a power plug",
+      "feedback": "Great simple question",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Yes plug",
+        "No plug",
+        "Any seat",
+        "Near plug",
+        "Far plug",
+        "Window seat",
+        "Door seat",
+        "Middle seat",
+        "No need",
+        "Battery full",
+        "Charge phone",
+        "Charge tablet",
+        "Plug later",
+        "Plug helpful",
+        "Ask later",
+        "No idea",
+        "Surprise me",
+        "Okay plug",
+        "No thanks",
+        "Yes please"
+      ]
+    }
+  },
+  {
+    "instruction": "Your task:\n- Assist buying ticket easy.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I travel with pet cat.\" \nAssistant: \"Cats are welcome in carriers.\" \nFeedback: \"Good info.\"\n\nCurrent student input: \"Pet ticket price?\"",
+    "output": {
+      "reply": "Pet ticket is three dollars Shall I add the pet ticket",
+      "feedback": "Ask What is the pet ticket price",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Yes add",
+        "No add",
+        "Cat stays",
+        "Dog later",
+        "Pet at home",
+        "Need cage",
+        "Have carrier",
+        "Borrow carrier",
+        "Ask mom",
+        "Ask dad",
+        "Pay now",
+        "Pay later",
+        "Unsure",
+        "Maybe",
+        "Yes please",
+        "No thank you",
+        "Cat free",
+        "Okay add",
+        "Need think",
+        "Not sure"
+      ]
+    }
+  },
+
+  {
+    "instruction": "Your task:\n- Easy train ticket convo.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I want group ticket for class.\" \nAssistant: \"How many students are in the class?\"\nFeedback: \"Great expression.\"\n\nCurrent student input: \"Twenty kids and two teachers.\"",
+    "output": {
+      "reply": "So twenty two people total shall I book seats together",
+      "feedback": "Say Twenty kids and two teachers are traveling",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Yes together",
+        "Split fine",
+        "Front seats",
+        "Back seats",
+        "Any seats",
+        "Window row",
+        "Door row",
+        "Two coaches",
+        "One coach",
+        "Group coach",
+        "Quiet coach",
+        "Loud coach",
+        "Teacher decide",
+        "Ask teacher",
+        "Not sure",
+        "Need plan",
+        "Yes please",
+        "No thanks",
+        "Later decide",
+        "Surprise us"
+      ]
+    }
+  },
+
+
+  {
+    "instruction": "Your task:\n- Assist purchase easy.\n\nRespond in JSON format.",
+    "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"I pay with cash.\" \nAssistant: \"Cash is fine.\" \nFeedback: \"Clear sentence.\"\n\nCurrent student input: \"Where I pick ticket?\"",
+    "output": {
+      "reply": "You can pick the ticket at the station desk ten minutes before the train Is that okay for you",
+      "feedback": "Say Where do I pick up the ticket",
+      "adjust_difficulty": "increase",
+      "possible_correct_responses": [
+        "Yes okay",
+        "Too early",
+        "Too late",
+        "Need sooner",
+        "Need later",
+        "Good time",
+        "Fine",
+        "Ask mom",
+        "Ask dad",
+        "Teacher picks",
+        "Friend picks",
+        "Will come",
+        "Send ticket",
+        "Mail ticket",
+        "Phone ticket",
+        "Print home",
+        "Pick kiosk",
+        "Not sure",
+        "Change time",
+        "Works"
+      ]
+    }
+  }
+]
+

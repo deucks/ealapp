@@ -1,0 +1,290 @@
+[
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Hi, can I have fries, please?\"\nAssistant: \"Of course! Would you like a drink with that?\"\nFeedback: \"Try: 'Hi, could I have some fries, please?' to sound more polite.\"\n\nCurrent student input: \"Yes, I'd also want a burger.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Sure, I'll add a burger to your order. Anything else I can get for you?",
+        "feedback": "Try saying: \"Yes, I'd also like a burger.\" instead of \"Yes, I'd also want a burger.\"",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "That’s all for now, thanks!",
+          "Could I get some extra ketchup?",
+          "No, thank you. I’m good.",
+          "Actually, I'd like a larger size for my fries.",
+          "Yes, please add a bottle of water."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Hello, do you have any chicken wraps?\"\nAssistant: \"Yes, we do! Would you like one with grilled or fried chicken?\"\nFeedback: \"Good job! You can also say: 'Hello, do you offer chicken wraps?'\"\n\nCurrent student input: \"Give me fried chicken wrap now.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Certainly! One fried chicken wrap coming right up. Would you like any sauces with that?",
+        "feedback": "Try: \"Could you give me a fried chicken wrap, please?\" to make it more polite.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I'd like some barbecue sauce on the side.",
+          "No, that's all. Thank you!",
+          "Do you have hot sauce?",
+          "Yes, please add mayonnaise.",
+          "Just plain is fine."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"I want a veggie burger.\"\nAssistant: \"Sure! We have a classic veggie burger or a mushroom veggie burger. Which one would you like?\"\nFeedback: \"Nice request. You could also say: 'I’d like a veggie burger, please.'\"\n\nCurrent student input: \"I want classic veggie burger.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Alright, I'll get a classic veggie burger started for you. Would you like any sides?",
+        "feedback": "Try saying: \"I want a classic veggie burger.\" so you include 'a' before 'classic.'",
+        "adjust_difficulty": "decrease",
+        "possible_correct_responses": [
+          "Yes, I'd like some fries, please.",
+          "No, I'm fine. Thank you.",
+          "Could I add a small salad?",
+          "Yes, I'd like onion rings.",
+          "Actually, make it a combo with fries and a drink."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Hello, I'd like a medium fries and a small cola.\"\nAssistant: \"No problem! Anything else?\"\nFeedback: \"Great request. You could also say: 'Hello, can I please have a medium order of fries and a small cola?'\"\n\nCurrent student input: \"Yes, I do want chicken nuggets, too.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Sure thing! I'll add chicken nuggets to your order. Would you like any sauce with them?",
+        "feedback": "Try: \"Yes, I would like chicken nuggets too.\" The phrase 'I do want' isn't wrong, but 'I would like' sounds more polite.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I'd like barbecue sauce.",
+          "No sauce, thanks.",
+          "Sweet and sour sauce, please.",
+          "Could I get honey mustard sauce?",
+          "No, I'm all set."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Can I have a cheeseburger combo?\"\nAssistant: \"Absolutely. What size drink would you like with that combo?\"\nFeedback: \"Well done. You might also say: 'Could I have a cheeseburger combo, please?'\"\n\nCurrent student input: \"Large soda is fine. I also want apple pie.\" \n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "A large soda and an apple pie, coming right up. Anything else for you today?",
+        "feedback": "Try: \"A large soda is fine. I also want an apple pie.\" Make sure to include 'an' before 'apple pie.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "That’s everything, thanks!",
+          "Yes, I'd like some fries, too.",
+          "No, that's all for now.",
+          "Actually, I want two apple pies.",
+          "Yes, add a small salad, please."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Good evening, I'd like a fish sandwich.\"\nAssistant: \"Of course! Would you like to make it a meal with fries and a drink?\"\nFeedback: \"Excellent job on your polite greeting.\"\n\nCurrent student input: \"Yes, I'll want a small fries and medium drink.\" \n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "No problem. A small fries and a medium drink, got it. Anything else?",
+        "feedback": "Try: \"Yes, I'd like a small fries and a medium drink.\" 'I'll want' works, but 'I'd like' sounds more natural.",
+        "adjust_difficulty": "decrease",
+        "possible_correct_responses": [
+          "That’s it, thank you!",
+          "Actually, could you make the drink large?",
+          "Do you have iced tea?",
+          "No, this is fine.",
+          "I’d like a bottle of water instead, please."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Hi, I want a chocolate milkshake.\"\nAssistant: \"Sure! Would you like whipped cream on that?\"\nFeedback: \"You could also say: 'Hi, I'd like a chocolate milkshake, please.'\"\n\nCurrent student input: \"Yes, I want with whipped cream.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Absolutely, I'll add whipped cream. Anything else you'd like?",
+        "feedback": "Try saying: \"Yes, I want it with whipped cream.\" to be more precise.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "No, that's all. Thank you!",
+          "Yes, can I have extra cream?",
+          "I would also like a small fry.",
+          "That’s everything for now!",
+          "Actually, make that a large milkshake."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Can I get a soda, please?\"\nAssistant: \"Sure, would you like regular or diet soda?\"\nFeedback: \"Good use of 'please.'\"\n\nCurrent student input: \"I take a regular one, thanks.\" \n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "A regular soda, coming up. Anything else you'd like to order?",
+        "feedback": "Try: \"I'll take a regular one, thanks.\" or \"I'd like a regular one, please.\"",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "That’s it, thank you!",
+          "Yes, I'd also like a burger.",
+          "No, that’s all for now.",
+          "Can I add some fries?",
+          "I’d also like some chicken nuggets."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Hi, I'd like a meal with a hamburger and fries.\"\nAssistant: \"Sure! We have small, medium, and large meal sizes. Which would you prefer?\"\nFeedback: \"Good job specifying the meal.\"\n\nCurrent student input: \"Let me get medium.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Great choice. One medium meal coming up. Any drink with that?",
+        "feedback": "Try: \"Let me get a medium meal.\" to be clearer.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "I'll take a cola, thanks.",
+          "Yes, I'd like an iced tea.",
+          "No drink for me.",
+          "Could I get a lemonade?",
+          "I'll have a bottle of water, please."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Could I have a double cheeseburger with extra cheese?\"\nAssistant: \"Certainly! Do you want to add any toppings like lettuce or tomato?\"\nFeedback: \"Excellent detail.\"\n\nCurrent student input: \"No, I good.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Alright, no lettuce or tomato. Anything else for your order?",
+        "feedback": "Try saying: \"No, I'm good.\"",
+        "adjust_difficulty": "decrease",
+        "possible_correct_responses": [
+          "That’s all, thank you!",
+          "Yes, I'd like pickles instead.",
+          "Actually, can I add onions?",
+          "No, that’s perfect!",
+          "I’d also like a small fries."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Hi, do you have spicy chicken burgers?\"\nAssistant: \"Yes, we do. Would you like it in a combo or just the sandwich?\"\nFeedback: \"Great question.\"\n\nCurrent student input: \"Just sandwich is okay.\" \n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Okay, one spicy chicken sandwich on its own. Anything else for you?",
+        "feedback": "Try: \"Just the sandwich is okay.\" Include 'the' before 'sandwich.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "No, I’m good. Thanks!",
+          "Yes, I'd like fries as well.",
+          "Do you have any dessert options?",
+          "Actually, can I upgrade to a combo?",
+          "I’d also like a bottle of water."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Hello, I'd like a bacon cheeseburger combo.\"\nAssistant: \"Sure, did you want a regular or large combo?\"\nFeedback: \"Well done, just remember to say 'please' when you can.\"\n\nCurrent student input: \"Regular is fine, thank.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "A regular bacon cheeseburger combo, got it. Would you like any sauce or extra toppings?",
+        "feedback": "Try: \"Regular is fine, thank you.\" to include 'you' after 'thank.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "No sauce, thanks!",
+          "Yes, I'd like barbecue sauce.",
+          "Could I have extra onions?",
+          "No, I’m good with just the combo.",
+          "Maybe add some pickles, please."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Do you have meals for kids?\"\nAssistant: \"Yes, we have several kids' meal options.\"\nFeedback: \"Nice inquiry.\"\n\nCurrent student input: \"Give me kids meal with chicken strips.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student’s performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Certainly! One kids' meal with chicken strips. Would you like apple slices or fries with that?",
+        "feedback": "Try: \"Give me a kids' meal with chicken strips.\" to include 'a' before 'kids' meal.'",
+        "adjust_difficulty": "decrease",
+        "possible_correct_responses": [
+          "Fries, please!",
+          "Apple slices, please.",
+          "No sides needed.",
+          "I’d like fries with ketchup.",
+          "Actually, can I get a kids' burger meal instead?"
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"I'd like to order the spicy fries.\"\nAssistant: \"Sure thing. They come in small, medium, or large. Which would you prefer?\"\nFeedback: \"Great job specifying you want to order.\"\n\nCurrent student input: \"Let me get big size.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "One large spicy fries, coming up. Would you like a drink with that?",
+        "feedback": "Try: \"Let me get the large size.\" or \"Let me get a large order.\"",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "No, I'm all set. Thanks!",
+          "Yes, I'd like a soda as well.",
+          "Actually, I want medium, not large.",
+          "I'll have a water, please.",
+          "Could I also get a milkshake?"
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Hello, do you offer a breakfast menu now?\"\nAssistant: \"Yes, we do serve breakfast until 11 AM.\"\nFeedback: \"Great question about the menu timing.\"\n\nCurrent student input: \"I want egg muffin meal, please.\" \n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "One Egg Muffin meal, coming right up. Would you like coffee or juice with that?",
+        "feedback": "Try: \"I want an egg muffin meal, please.\" Make sure to include 'an' before 'egg muffin meal.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Coffee, please.",
+          "Juice, please.",
+          "No drink, thanks.",
+          "I'd like a latte, actually.",
+          "Could I have a bottle of water instead?"
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Hello, can I get a salad?\"\nAssistant: \"Yes, we have a garden salad or a Caesar salad. Which one would you like?\"\nFeedback: \"You can also say: 'Hello, could I have a salad?'\"\n\nCurrent student input: \"I like garden salad, please.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Sure! One garden salad coming up. Would you like to add any protein like chicken?",
+        "feedback": "Try: \"I would like a garden salad, please.\" to be more natural.",
+        "adjust_difficulty": "decrease",
+        "possible_correct_responses": [
+          "Yes, please add grilled chicken.",
+          "No, just the salad is fine.",
+          "Do you have tofu?",
+          "I’d like fried chicken, if possible.",
+          "That’s all for now."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"I'd like a large fries and a milkshake.\"\nAssistant: \"What flavor milkshake would you like?\"\nFeedback: \"Nice job using 'I'd like.'\"\n\nCurrent student input: \"Chocolate is good for me.\" \n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Great, I'll get you a chocolate milkshake. Would you like whipped cream on it?",
+        "feedback": "Try saying: \"Chocolate is good for me,\" or \"I'd like a chocolate milkshake.\" Both are fine, but be consistent with your phrasing.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, whipped cream please.",
+          "No, thank you!",
+          "Make it a regular milkshake without extras.",
+          "I'd like extra chocolate syrup if possible.",
+          "That’s everything for now."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Ordering food at a fast food restaurant\nLevel: beginner\nConversation history:\nStudent: \"Hello, I'd like a chicken burger.\"\nAssistant: \"Sure! Would you like spicy or regular?\"\nFeedback: \"Good job greeting politely.\"\n\nCurrent student input: \"I'll take spicy and add cheese.\" \n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Based on the student's performance, decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Alright, one spicy chicken burger with cheese. Anything else I can get for you?",
+        "feedback": "Everything sounds great! Good use of 'I'll take.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "No, that's all. Thank you!",
+          "Could I make it a combo?",
+          "Yes, add fries, please.",
+          "I’d also like a small soda.",
+          "That’s it for now."
+        ]
+      }
+    }
+]

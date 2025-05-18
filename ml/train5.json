@@ -1,0 +1,883 @@
+[
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Meeting new classmates\nLevel: BL\nConversation history:\nStudent: \"Hello, name is Anna.\"\nAssistant: \"Hi Anna! Nice to meet you. I'm your teacher.\"\nFeedback: \"Try: 'My name is Anna.'\"\n\nCurrent student input: \"Nice meet you.\"\n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Decide whether to increase or decrease the difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Nice to meet you too, Anna! How are you today?",
+        "feedback": "Try saying: 'Nice to meet you.' and add 'to'.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "I’m good, thank you!",
+          "I’m okay, but a little nervous.",
+          "I feel excited to be here.",
+          "I’m happy to meet new friends.",
+          "I’m fine, thank you. And you?"
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Decide whether to increase or decrease the difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Asking for classroom objects\nLevel: BL\nConversation history:\nStudent: \"I want pencil.\"\nAssistant: \"Sure, here you go. Anything else?\"\nFeedback: \"Try using 'a' or 'the' before objects: 'I want a pencil.'\"\n\nCurrent student input: \"I want eraser, too.\" \n\nYour task:\n- Reply naturally, continuing the scenario.\n- Give constructive feedback on grammar.\n- Decide whether to increase or decrease the difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Here’s an eraser for you. Would you like anything else?",
+        "feedback": "Try: 'I want an eraser, too.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "No, that's all, thank you.",
+          "Yes, I need a pen.",
+          "I'm good, thank you.",
+          "I want one more pencil, please.",
+          "No, I'm fine now."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue the scenario naturally.\n- Give grammar feedback.\n- Adjust difficulty based on performance.\n\nRespond in JSON format.",
+      "input": "Scenario: Introducing a friend to the class\nLevel: BL\nConversation history:\nStudent: \"This friend, name David.\"\nAssistant: \"Hi David, welcome!\"\nFeedback: \"Try: 'This is my friend, his name is David.'\"\n\nCurrent student input: \"He is new here.\"\n\nYour task:\n- Continue naturally.\n- Give grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Thank you for introducing him. We're happy to have David in class!",
+        "feedback": "Great job! You used 'He is new here' correctly.",
+        "adjust_difficulty": "decrease",
+        "possible_correct_responses": [
+          "Yes, I'm glad to help.",
+          "He is excited to learn English.",
+          "We both like this school.",
+          "It's nice to meet new people.",
+          "I will show him around."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond naturally.\n- Provide grammar feedback.\n- Decide on difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Greeting teacher in the morning\nLevel: BL\nConversation history:\nStudent: \"Morning teacher!\"\nAssistant: \"Good morning! How are you?\"\nFeedback: \"Try: 'Good morning, teacher!' to be clear.\"\n\nCurrent student input: \"I am fine, and you?\" \n\nYour task:\n- Continue the scenario.\n- Feedback on grammar.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "I’m doing well, thank you for asking. Are you ready for today’s lesson?",
+        "feedback": "Excellent sentence! That was polite and well-structured.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I'm ready!",
+          "I need a little help with my book.",
+          "I’m very excited.",
+          "Sure, let’s start!",
+          "I’m ready to learn."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond, continuing the scenario naturally.\n- Offer grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Asking about the date\nLevel: BL\nConversation history:\nStudent: \"Teacher, what date is today?\"\nAssistant: \"It's the 5th of May.\"\nFeedback: \"Good question!\"\n\nCurrent student input: \"What day is tomorrow?\" \n\nYour task:\n- Continue scenario.\n- Grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Tomorrow is the 6th of May. We have a class trip planned, remember?",
+        "feedback": "Great question. You used 'What day is tomorrow?' correctly.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I remember!",
+          "Where are we going?",
+          "I forgot about the trip.",
+          "I'm excited for the trip.",
+          "What time do we leave?"
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario naturally.\n- Provide grammar correction.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Asking for repetition\nLevel: BL\nConversation history:\nStudent: \"Could you say again, please?\"\nAssistant: \"Sure, I said we have a spelling test on Friday.\"\nFeedback: \"Excellent politeness!\"\n\nCurrent student input: \"I not heard test day.\"\n\nYour task:\n- Continue.\n- Grammar feedback.\n- Difficulty decision.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "No problem. The test is on Friday, so please review your spelling words.",
+        "feedback": "Try saying: 'I did not hear the test day,' or 'I didn’t hear what day the test is.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Okay, I'll study now.",
+          "Thank you for telling me.",
+          "Which words do I study?",
+          "I will practice at home.",
+          "Do we have more tests?"
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply in a natural, encouraging manner.\n- Give grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Asking about homework\nLevel: BL\nConversation history:\nStudent: \"I do homework last night.\"\nAssistant: \"Good job! How long did it take you?\"\nFeedback: \"Use past tense: 'I did my homework last night.'\"\n\nCurrent student input: \"I do for one hour.\" \n\nYour task:\n- Continue scenario.\n- Grammar feedback.\n- Decide difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Great effort! One hour is a good amount of time to practice.",
+        "feedback": "Try: 'I did it for one hour.' to keep the tense consistent.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, it was good practice.",
+          "It was too difficult.",
+          "I learned a lot.",
+          "I want to do more exercises.",
+          "Thank you, I'll remember."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond naturally.\n- Correct grammar.\n- Adjust difficulty as needed.\n\nRespond in JSON format.",
+      "input": "Scenario: Classroom routine\nLevel: BL\nConversation history:\nStudent: \"Where I put my book?\"\nAssistant: \"Please put it on the shelf by the window.\"\nFeedback: \"Try: 'Where do I put my book?'\"\n\nCurrent student input: \"Okay, I put it now.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty adjustment.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Thank you! After that, could you please help me pass out these worksheets?",
+        "feedback": "Try: 'Okay, I will put it there now.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Sure, I can help.",
+          "Where do I put the worksheets?",
+          "Yes, I will do it now.",
+          "Of course, no problem.",
+          "I will help right away!"
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario naturally.\n- Give grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Talking about lunchtime\nLevel: BL\nConversation history:\nStudent: \"I hungry.\"\nAssistant: \"It's lunchtime soon. What would you like to eat?\"\nFeedback: \"Try: 'I am hungry.'\"\n\nCurrent student input: \"I want sandwich.\" \n\nYour task:\n- Respond.\n- Provide grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "A sandwich sounds good! Do you want anything to drink?",
+        "feedback": "Try: 'I want a sandwich.' Add 'a' before 'sandwich.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I'd like water.",
+          "No, I'm okay.",
+          "I want juice, please.",
+          "Maybe milk?",
+          "Yes, I'd like a soda."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario naturally.\n- Provide grammar advice.\n- Adjust difficulty if needed.\n\nRespond in JSON format.",
+      "input": "Scenario: Asking the teacher for help with reading\nLevel: BL\nConversation history:\nStudent: \"This word I not understand.\" (pointing)\nAssistant: \"It's 'imagine.'\"\nFeedback: \"Try: 'I do not understand this word.'\"\n\nCurrent student input: \"What mean imagine?\"\n\nYour task:\n- Reply.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "'Imagine' means to form a picture or idea in your mind. Does that help?",
+        "feedback": "Try: 'What does 'imagine' mean?'",
+        "adjust_difficulty": "decrease",
+        "possible_correct_responses": [
+          "Yes, thank you!",
+          "Can you say example?",
+          "Now I understand better.",
+          "I can use it in a sentence.",
+          "That helps a lot."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario naturally.\n- Give constructive feedback.\n- Decide on difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Classroom introduction circle\nLevel: B1\nConversation history:\nStudent: \"My name is Leo, I come from Brazil.\"\nAssistant: \"Welcome, Leo! Tell us about your hobbies.\"\nFeedback: \"Good introduction! You can also say 'I am from Brazil.'\"\n\nCurrent student input: \"I like play football.\"\n\nYour task:\n- Continue scenario.\n- Grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That’s great, Leo! Football is fun. How often do you play?",
+        "feedback": "Try: 'I like to play football.' Add 'to' before 'play.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "I play every weekend.",
+          "I train twice a week.",
+          "I just play with friends sometimes.",
+          "I love playing it daily!",
+          "I play football after school."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Provide grammar tips.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Describing weekend activities\nLevel: B1\nConversation history:\nStudent: \"On weekend, I go to park.\"\nAssistant: \"Sounds relaxing. What do you do there?\"\nFeedback: \"Try: 'On the weekend, I go to the park.'\"\n\nCurrent student input: \"I walk dog and read book.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That’s lovely. Walking the dog and reading a book both sound peaceful!",
+        "feedback": "Try: 'I walk my dog and read a book.' Include 'my' and 'a.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, it is very nice.",
+          "I love reading outdoors.",
+          "My dog loves the park.",
+          "Sometimes I play basketball, too.",
+          "It’s my favorite weekend routine."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue naturally.\n- Give grammar guidance.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Class teacher asks about daily routine\nLevel: B1\nConversation history:\nStudent: \"I wake up and eat breakfast.\"\nAssistant: \"That’s good. What do you usually have for breakfast?\"\nFeedback: \"Nice short sentence. You can add more details.\"\n\nCurrent student input: \"I usually take cereal and milk.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That sounds healthy. Do you have any fruit with your cereal?",
+        "feedback": "Try: 'I usually have cereal and milk.' Instead of 'take.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I add bananas.",
+          "Sometimes strawberries.",
+          "No, just cereal and milk.",
+          "I also drink juice.",
+          "I prefer toast sometimes."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Give constructive grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Discussing favorite subjects at school\nLevel: B1\nConversation history:\nStudent: \"I like science. We do experiments.\"\nAssistant: \"That’s wonderful! What’s your favorite experiment so far?\"\nFeedback: \"Good use of present tense.\"\n\nCurrent student input: \"I like do volcano experiment.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Volcano experiments are exciting! Did you use baking soda and vinegar?",
+        "feedback": "Try: 'I like to do the volcano experiment.' Include 'to' and 'the.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, it was very fun!",
+          "We did, and it exploded!",
+          "I love the reaction part.",
+          "We learned about chemical reactions.",
+          "It was messy but exciting."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Answer naturally.\n- Provide grammar feedback.\n- Decide if difficulty changes.\n\nRespond in JSON format.",
+      "input": "Scenario: Asking for directions in school\nLevel: B1\nConversation history:\nStudent: \"Where is the library?\"\nAssistant: \"It's on the second floor, near the computers.\"\nFeedback: \"You asked well.\"\n\nCurrent student input: \"We have library class tomorrow, yes?\" \n\nYour task:\n- Continue scenario.\n- Grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Yes, we have library class at 10 AM tomorrow. Remember to bring your books!",
+        "feedback": "Try: 'Do we have library class tomorrow?' for a clearer question.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Thank you, I will bring them.",
+          "What books should I bring?",
+          "Yes, I remember the time.",
+          "Okay, see you then!",
+          "I will prepare tonight."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond naturally.\n- Offer grammar suggestions.\n- Adjust difficulty if needed.\n\nRespond in JSON format.",
+      "input": "Scenario: Expressing preferences in class\nLevel: B1\nConversation history:\nStudent: \"I prefer study math in morning.\"\nAssistant: \"Interesting! Why is that?\"\nFeedback: \"Try: 'I prefer to study math in the morning.'\"\n\nCurrent student input: \"Because I fresh in morning.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That makes sense. Having a clear mind in the morning really helps.",
+        "feedback": "Try: 'Because I am fresh in the morning.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I focus better.",
+          "That is my best time.",
+          "I understand more in morning.",
+          "I’m not tired then.",
+          "It’s my favorite study time."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Provide grammar advice.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Talking about a school trip\nLevel: B1\nConversation history:\nStudent: \"We go to museum last week.\"\nAssistant: \"Yes, that was fun. What did you learn?\"\nFeedback: \"Try: 'We went to the museum last week.' Past tense.\"\n\nCurrent student input: \"I learn about dinosaurs.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Dinosaurs are fascinating! Did you see the big T-Rex skeleton?",
+        "feedback": "Try: 'I learned about dinosaurs.' Past tense 'learned.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, it was huge!",
+          "It was scary but amazing.",
+          "I loved the exhibit!",
+          "Yes, T-Rex is my favorite.",
+          "We saw many fossils."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue the scenario.\n- Give grammar feedback.\n- Decide if difficulty changes.\n\nRespond in JSON format.",
+      "input": "Scenario: Asking about after-school clubs\nLevel: B1\nConversation history:\nStudent: \"I want join drama club.\"\nAssistant: \"That’s a great idea!\"\nFeedback: \"Try: 'I want to join the drama club.'\"\n\nCurrent student input: \"They practice on Friday, right?\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Yes, they practice every Friday after school. Are you excited to perform?",
+        "feedback": "Your question is fine! Good job using 'right?' as confirmation.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I love acting!",
+          "I'm a little nervous.",
+          "I want to try a small role.",
+          "Yes, I'm very excited!",
+          "I hope to make new friends there."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond with a natural continuation.\n- Provide grammar help.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Planning a class presentation\nLevel: B1\nConversation history:\nStudent: \"I will talk about animals.\"\nAssistant: \"Sounds good. Which animal will you focus on?\"\nFeedback: \"Well done.\"\n\nCurrent student input: \"I choose lion because lion strong.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Great choice! Lions are very strong indeed. Have you found any interesting facts yet?",
+        "feedback": "Try: 'I choose the lion because it is strong.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I found many facts!",
+          "It is known as the king of the jungle.",
+          "I have some photos, too.",
+          "Not yet, I'm still researching.",
+          "Yes, they live in groups called prides."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Provide grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Describing family members\nLevel: B1\nConversation history:\nStudent: \"I have two sister and one brother.\"\nAssistant: \"That’s a big family!\"\nFeedback: \"Try: 'I have two sisters and one brother.' Remember plural 'sisters.'\"\n\nCurrent student input: \"My brother is older. He studying in university.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty decision.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Oh, that’s wonderful! What is he studying at university?",
+        "feedback": "Try: 'He is studying at university.' Use 'is' for present continuous.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "He studies engineering.",
+          "He studies business.",
+          "I'm not sure, I will ask.",
+          "He studies computer science.",
+          "He wants to be a doctor."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario naturally.\n- Provide grammar correction.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Scheduling group work\nLevel: B1\nConversation history:\nStudent: \"We meet after class do project?\"\nAssistant: \"Sure, I'm free at 3 PM.\"\nFeedback: \"Try: 'Shall we meet after class to do the project?'\"\n\nCurrent student input: \"Yes, 3 PM good for me.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Perfect! Let's meet in the library at 3 PM and start working.",
+        "feedback": "Try: '3 PM is good for me.' Add 'is' after 3 PM.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Okay, see you there.",
+          "I will bring my notes.",
+          "Let’s work on the introduction first.",
+          "Sounds good!",
+          "I’ll be ready with the materials."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Offer grammar support.\n- Adjust difficulty as needed.\n\nRespond in JSON format.",
+      "input": "Scenario: Talking about hobbies\nLevel: B1\nConversation history:\nStudent: \"I like dancing and singing.\"\nAssistant: \"Those are fun hobbies!\"\nFeedback: \"Great job listing hobbies.\"\n\nCurrent student input: \"I practicing every weekend.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That’s wonderful. Practice makes you better, right?",
+        "feedback": "Try: 'I practice every weekend.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I want to get better.",
+          "My singing is improving.",
+          "I enjoy dancing a lot.",
+          "It helps me stay active.",
+          "I hope to perform one day."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Give grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Describing a picture in class\nLevel: B1\nConversation history:\nStudent: \"I see a beach and people swimming.\"\nAssistant: \"Good observation. What else do you notice?\"\nFeedback: \"You can add more details about what they are doing.\" \n\nCurrent student input: \"They wear color clothes, look happy.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "They do look happy! Can you describe the colors of their clothes?",
+        "feedback": "Try: 'They are wearing colorful clothes and look happy.' Use present continuous.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, some are wearing bright yellow.",
+          "One is wearing a blue shirt.",
+          "They have red hats and green shorts.",
+          "I see many different colors.",
+          "Yes, they look very cheerful."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario in a natural way.\n- Provide grammar corrections.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Asking about a missed assignment\nLevel: B2\nConversation history:\nStudent: \"I was absent yesterday. Did we have any homework?\"\nAssistant: \"Yes, we had a reading assignment.\"\nFeedback: \"Nice question.\"\n\nCurrent student input: \"Could you telling me the pages?\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Sure. Please read pages 35 to 40 in your textbook.",
+        "feedback": "Try: 'Could you tell me the pages?' or 'Could you let me know the pages?'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Thank you, I’ll read them tonight.",
+          "Got it, I’ll do it now.",
+          "Are there questions to answer?",
+          "Thank you, I appreciate it.",
+          "I will catch up quickly."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Provide grammar feedback.\n- Adjust difficulty as needed.\n\nRespond in JSON format.",
+      "input": "Scenario: Explaining a science concept\nLevel: B2\nConversation history:\nStudent: \"Photosynthesis is how plants make food from sunlight.\"\nAssistant: \"Exactly! Can you tell me more?\"\nFeedback: \"Well done explaining the main idea.\"\n\nCurrent student input: \"It also producing oxygen.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Correct. Plants release oxygen as a byproduct. Excellent observation!",
+        "feedback": "Try: 'It also produces oxygen.' Use 'produces' for third person singular.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, and it's important for breathing.",
+          "We need oxygen to survive.",
+          "It helps animals too.",
+          "That's why forests are crucial.",
+          "I find it very interesting."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Provide a natural reply.\n- Give grammar help.\n- Decide difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Discussing a favorite book\nLevel: B2\nConversation history:\nStudent: \"I read a novel about space travel.\" \nAssistant: \"That sounds fascinating. What did you enjoy about it?\"\nFeedback: \"Nice introduction to the book.\"\n\nCurrent student input: \"The character was traveling to Mars. He face many problems.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Mars missions can be full of challenges! How did the character solve them?",
+        "feedback": "Try: 'He faced many problems.' Use the past tense 'faced.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "He used his intelligence.",
+          "He relied on a team for help.",
+          "He never gave up.",
+          "He planned carefully.",
+          "It was very exciting."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Offer grammar tips.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Describing weekend travel\nLevel: B2\nConversation history:\nStudent: \"Last weekend, I visited my grandparents in the countryside.\" \nAssistant: \"That’s lovely! How was your trip?\"\nFeedback: \"Great use of past tense.\"\n\nCurrent student input: \"It was good. We spend time cooking together.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That’s wonderful. What dishes did you cook?",
+        "feedback": "Try: 'We spent time cooking together.' Past tense 'spent.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "We made a traditional soup.",
+          "My grandmother taught me new recipes.",
+          "We cooked a big family meal.",
+          "It was delicious!",
+          "I loved learning her methods."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally.\n- Provide grammar suggestions.\n- Decide difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Talking about a class play\nLevel: B2\nConversation history:\nStudent: \"I practiced lines for the play.\"\nAssistant: \"That’s excellent. How do you feel about performing?\"\nFeedback: \"Good use of past tense.\"\n\nCurrent student input: \"I little nervous but also excited.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Being nervous is normal, and excitement can help you perform better!",
+        "feedback": "Try: 'I am a little nervous but also excited.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I hope I do well.",
+          "I practiced a lot.",
+          "I think the audience will enjoy it.",
+          "I just need to relax.",
+          "I’m looking forward to it."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Give grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Discussing environmental issues\nLevel: B2\nConversation history:\nStudent: \"Pollution is a big problem in many cities.\" \nAssistant: \"Absolutely. What types of pollution concern you the most?\"\nFeedback: \"Good expression of opinion.\"\n\nCurrent student input: \"Air pollution because it affect our health.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Yes, air pollution can cause serious health issues. Do you know any solutions?",
+        "feedback": "Try: 'It affects our health.' Use 'affects' for third person singular.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "We should plant more trees.",
+          "Use less cars, more public transport.",
+          "We can support clean energy.",
+          "People should recycle more.",
+          "Stricter regulations are needed."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond naturally.\n- Provide grammar improvement.\n- Decide on difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Planning a group presentation\nLevel: B2\nConversation history:\nStudent: \"We will present about different cultures.\"\nAssistant: \"Great choice. How will you divide the topics?\"\nFeedback: \"Well-structured sentence.\"\n\nCurrent student input: \"I and Maria talk about food. Then Tom speak about festivals.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That sounds organized. Make sure everyone knows their parts clearly.",
+        "feedback": "Try: 'Maria and I will talk about food. Then Tom will speak about festivals.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, we will practice together.",
+          "We will meet after class.",
+          "I’ll confirm with Tom.",
+          "We want to do it well.",
+          "That’s our plan!"
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Give grammar feedback.\n- Adjust difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Discussing a field trip experience\nLevel: B2\nConversation history:\nStudent: \"Our trip to the art gallery was inspiring.\" \nAssistant: \"I’m glad you enjoyed it. Which exhibit impressed you the most?\"\nFeedback: \"Good use of adjectives.\"\n\nCurrent student input: \"The modern art section were very unique.\" \n\nYour task:\n- Respond.\n- Grammar.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Modern art can be quite innovative. What did you find unique about it?",
+        "feedback": "Try: 'The modern art section was very unique.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "It used bright colors.",
+          "The shapes were unusual.",
+          "They had interactive pieces.",
+          "I liked the abstract paintings.",
+          "It was very creative."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Offer grammar corrections.\n- Adjust difficulty as needed.\n\nRespond in JSON format.",
+      "input": "Scenario: Asking for advice on improving English\nLevel: B2\nConversation history:\nStudent: \"I want to become more fluent.\"\nAssistant: \"Reading and speaking regularly can help a lot.\"\nFeedback: \"Great goal!\"\n\nCurrent student input: \"Should I watch English movies, or it too difficult?\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Watching English movies is a great way to learn! You can use subtitles to help.",
+        "feedback": "Try: 'Should I watch English movies, or is it too difficult?'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "I will watch with subtitles.",
+          "I’ll try easy movies first.",
+          "Maybe I can watch cartoons.",
+          "I like action films.",
+          "Yes, that will help me."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Explaining a personal achievement\nLevel: B2\nConversation history:\nStudent: \"I won first place in the school writing contest.\" \nAssistant: \"Congratulations! That’s amazing news.\"\nFeedback: \"Great expression of accomplishment.\"\n\nCurrent student input: \"Yes, I'm so proud. I didn't think I can win.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "You should be proud! Your hard work clearly paid off.",
+        "feedback": "Try: 'I didn’t think I could win.' Use past tense modal 'could.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, thank you!",
+          "I worked hard on it.",
+          "It was a surprise.",
+          "I appreciate your support.",
+          "I’ll keep writing more."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond naturally.\n- Provide grammar help.\n- Adjust difficulty accordingly.\n\nRespond in JSON format.",
+      "input": "Scenario: Discussing classmate's birthday plans\nLevel: B2\nConversation history:\nStudent: \"Lucy’s birthday is next week.\"\nAssistant: \"Yes, we might plan a small surprise for her.\"\nFeedback: \"Nice introduction of the topic.\"\n\nCurrent student input: \"That's great. I bring some snack.\" \n\nYour task:\n- Continue.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Awesome! We’ll arrange decorations, too. Do you have a favorite snack in mind?",
+        "feedback": "Try: 'I’ll bring some snacks.' Include future tense and plural 'snacks.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Maybe cookies and chips.",
+          "I love cupcakes.",
+          "I will bring fruit salad.",
+          "Yes, I’ll bring something sweet.",
+          "We can decide together."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Correct grammar.\n- Decide difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Reviewing a book in class\nLevel: B2\nConversation history:\nStudent: \"The story has a strong message about friendship.\" \nAssistant: \"I agree. Could you share a favorite scene?\"\nFeedback: \"Good summary of the theme.\"\n\nCurrent student input: \"Yes, the part when they find lost dog is best scene.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That does sound touching. What made it your favorite?",
+        "feedback": "Try: 'Yes, the part when they find the lost dog is the best scene.' Add 'the.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "It shows teamwork.",
+          "They never gave up looking.",
+          "I love how they cared for it.",
+          "It was very emotional.",
+          "It brought them closer."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply naturally.\n- Provide grammar suggestions.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Planning a research project\nLevel: B2\nConversation history:\nStudent: \"We need to gather data from different websites.\"\nAssistant: \"Yes, we should also check if they are reliable sources.\"\nFeedback: \"Good approach.\"\n\nCurrent student input: \"How can we verifying information?\" \n\nYour task:\n- Continue scenario.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "We can compare multiple sources and check for author credibility.",
+        "feedback": "Try: 'How can we verify the information?' Use the base verb 'verify.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, let's use official sites.",
+          "We can also ask our teacher.",
+          "I will use academic articles.",
+          "That’s a good plan!",
+          "I will double-check references."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Provide grammar correction.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Practicing a speech\nLevel: B2\nConversation history:\nStudent: \"I have to present my speech tomorrow.\" \nAssistant: \"Good luck! What’s your topic about?\"\nFeedback: \"Nice future plan.\"\n\nCurrent student input: \"It's about global warming, and how can we reduce carbon footprint.\" \n\nYour task:\n- Respond.\n- Grammar.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That’s an important topic. Any specific solutions you’re focusing on?",
+        "feedback": "Try: 'It’s about global warming and how we can reduce our carbon footprint.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, using renewable energy.",
+          "Walking instead of driving.",
+          "Recycling more at home.",
+          "Planting more trees.",
+          "I'm highlighting many methods."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond naturally.\n- Correct grammar.\n- Decide difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Discussing future plans\nLevel: B2\nConversation history:\nStudent: \"After school, I want to study computer science at university.\" \nAssistant: \"That’s a great goal. Have you chosen any universities yet?\"\nFeedback: \"Nice expression of ambition.\"\n\nCurrent student input: \"Not yet, I still looking at options.\" \n\nYour task:\n- Continue.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "It’s wise to explore. Let me know if you need advice on applications.",
+        "feedback": "Try: 'I’m still looking at options.' Use 'am' for present continuous.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I'll ask for help soon.",
+          "I want a good tech program.",
+          "I'm checking local universities first.",
+          "I'm also considering scholarships.",
+          "I will let you know."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Provide grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Asking teacher for feedback on an essay\nLevel: B2\nConversation history:\nStudent: \"I wrote about my vacation to France.\" \nAssistant: \"I’d love to read it. Any concerns you have?\"\nFeedback: \"Nice topic.\"\n\nCurrent student input: \"Yes, I'm worry my grammar is not correct.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Don’t worry too much. We can review your essay together and correct errors.",
+        "feedback": "Try: 'I’m worried my grammar is not correct.' Use 'worried.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Thank you, I'd appreciate that.",
+          "Yes, please check my verbs.",
+          "I need help with past tense.",
+          "That would be great!",
+          "I'm glad for your help."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond helpfully.\n- Give grammar tips.\n- Adjust difficulty accordingly.\n\nRespond in JSON format.",
+      "input": "Scenario: Classmate conversation about sports\nLevel: B2\nConversation history:\nStudent: \"I love basketball.\"\nAssistant: \"That’s awesome! Do you play on a team?\"\nFeedback: \"Simple question, well done.\"\n\nCurrent student input: \"Yes, I play since two years.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That’s great! Two years is a solid experience. Have you played in tournaments?",
+        "feedback": "Try: 'I have played for two years.' Use present perfect for duration.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, our team competed last month.",
+          "We have a tournament soon.",
+          "Not yet, but I want to!",
+          "We practice every weekend.",
+          "I enjoy playing with my friends."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue the scenario.\n- Provide grammar support.\n- Decide difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Describing a cooking experience\nLevel: B2\nConversation history:\nStudent: \"Yesterday, I tried a new recipe.\"\nAssistant: \"Nice! What did you make?\"\nFeedback: \"Good start of a story.\"\n\nCurrent student input: \"I make pasta, but it was too salty.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Sometimes that happens. Did you add too much salt by accident?",
+        "feedback": "Try: 'I made pasta, but it was too salty.' Use past tense 'made.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I poured too much.",
+          "I need to measure carefully.",
+          "Next time I’ll be cautious.",
+          "I'll try less salt next time.",
+          "It was still tasty, though."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply.\n- Provide grammar advice.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Planning a volunteer event\nLevel: B2\nConversation history:\nStudent: \"We will clean up the local park this weekend.\" \nAssistant: \"That’s a wonderful community service. How many volunteers do we have so far?\"\nFeedback: \"Nice future plan.\"\n\nCurrent student input: \"We have around 15, but we want more people join.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Fifteen is a good start. Maybe we can make a poster to recruit more volunteers?",
+        "feedback": "Try: 'We want more people to join.' Add 'to' before 'join.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, that's a great idea!",
+          "We can share on social media.",
+          "I'll ask my friends.",
+          "Let’s create a sign-up sheet.",
+          "We can talk to the principal."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Provide grammar correction.\n- Decide difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Speaking about school festival\nLevel: B2\nConversation history:\nStudent: \"We had a performance last month.\"\nAssistant: \"Yes, it was a big success!\"\nFeedback: \"Good past tense usage.\"\n\nCurrent student input: \"I was sang a song on stage.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "I remember that! You did really well. How did you feel on stage?",
+        "feedback": "Try: 'I sang a song on stage.' No need for 'was.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "I was nervous but excited.",
+          "Thank you! I practiced a lot.",
+          "It felt amazing.",
+          "I was happy to perform.",
+          "I hope to do it again."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply in a natural way.\n- Provide grammar tips.\n- Adjust difficulty if needed.\n\nRespond in JSON format.",
+      "input": "Scenario: Writing a short story\nLevel: B2\nConversation history:\nStudent: \"I want to write a fantasy story with dragons.\" \nAssistant: \"That’s creative! Do you have a plot in mind?\"\nFeedback: \"Nice introduction.\"\n\nCurrent student input: \"Yes, the hero rescue a village from evil dragon.\" \n\nYour task:\n- Respond.\n- Grammar.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That’s exciting! What makes your hero special?",
+        "feedback": "Try: 'The hero rescues a village from an evil dragon.' Use 'rescues' for third person.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "He has magical powers.",
+          "She is very brave.",
+          "He knows the dragon’s weakness.",
+          "He’s guided by a wise mentor.",
+          "I’m still figuring out the details."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Give grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Reviewing test results\nLevel: B2\nConversation history:\nStudent: \"I improved my score in the last test.\"\nAssistant: \"That’s great progress. How do you feel?\"\nFeedback: \"Well done acknowledging improvement.\"\n\nCurrent student input: \"I happy, but I want get even better.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That's a fantastic attitude. Consistent practice will help you improve further.",
+        "feedback": "Try: 'I am happy, but I want to get even better.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I will study daily.",
+          "I will do more practice tests.",
+          "I’m motivated now.",
+          "I want a higher grade next time.",
+          "Thank you for the support."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond naturally.\n- Provide grammar suggestions.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Describing a holiday celebration\nLevel: B2\nConversation history:\nStudent: \"During Lunar New Year, we gather with family.\"\nAssistant: \"That’s lovely. What traditions do you have?\"\nFeedback: \"Good introduction to cultural events.\"\n\nCurrent student input: \"We making special food and give red envelopes.\" \n\nYour task:\n- Continue scenario.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That sounds like a wonderful celebration. Any favorite dish you enjoy the most?",
+        "feedback": "Try: 'We make special food and give red envelopes.' Use simple present for general traditions.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, dumplings are my favorite!",
+          "I love the sweet rice cake.",
+          "We share many treats.",
+          "It's a time for family bonding.",
+          "We decorate the house too."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply helpfully.\n- Provide grammar guidance.\n- Adjust difficulty as needed.\n\nRespond in JSON format.",
+      "input": "Scenario: Talking about health and fitness\nLevel: B2\nConversation history:\nStudent: \"I try to exercise three times a week.\" \nAssistant: \"That’s a good routine! What exercises do you do?\"\nFeedback: \"Great use of adverbial phrase.\"\n\nCurrent student input: \"I run and do yoga, but sometimes I skip because of time.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "It’s understandable; schedules can be busy. Do you plan your workouts in advance?",
+        "feedback": "Your sentence is good. Consider adding detail: 'I run and do yoga, but sometimes I skip workouts because I don't have enough time.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I’ll try to schedule better.",
+          "I need a planner.",
+          "I might wake up earlier.",
+          "I want to be consistent.",
+          "I’ll try a different routine."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Correct grammar.\n- Decide difficulty level.\n\nRespond in JSON format.",
+      "input": "Scenario: Group discussion about a class project\nLevel: B2\nConversation history:\nStudent: \"We will create a poster about healthy eating.\" \nAssistant: \"That’s a great topic. How will you design it?\"\nFeedback: \"Good plan.\"\n\nCurrent student input: \"We can put pictures of fruit and vegetable and add facts.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Brilliant idea. Visual aids and facts will make it informative and attractive.",
+        "feedback": "Try: 'pictures of fruits and vegetables' or 'pictures of fruit and vegetables.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, we’ll use colorful images.",
+          "We should add some healthy recipes.",
+          "I can print them out.",
+          "We’ll also list benefits.",
+          "This will be fun!"
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Reply.\n- Provide grammar improvement.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Conversation about reading habits\nLevel: B2\nConversation history:\nStudent: \"I try to read one book each month.\" \nAssistant: \"That’s fantastic! Do you have a favorite genre?\"\nFeedback: \"Good consistent reading habit.\"\n\nCurrent student input: \"I like fiction, but sometime I read biography.\" \n\nYour task:\n- Continue scenario.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Nice variety! Which biography did you enjoy most recently?",
+        "feedback": "Try: 'I like fiction, but sometimes I read biographies.' Use plural or indefinite article.",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "I read one about Nelson Mandela.",
+          "I enjoyed a famous scientist’s biography.",
+          "I’m not sure which one next.",
+          "I find them very inspiring.",
+          "I prefer historical figures."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond naturally.\n- Provide grammar corrections.\n- Decide difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Talking about local events\nLevel: B2\nConversation history:\nStudent: \"There is a food festival downtown this weekend.\" \nAssistant: \"That’s exciting! Will you attend?\"\nFeedback: \"Nice mention of a local event.\"\n\nCurrent student input: \"Yes, I want try different cuisine.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Sounds delicious! Which cuisines are you most eager to taste?",
+        "feedback": "Try: 'Yes, I want to try different cuisines.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "I love Italian food.",
+          "Maybe some Asian dishes.",
+          "I like trying spicy food.",
+          "I’m open to anything new.",
+          "It will be a fun experience!"
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue scenario.\n- Correct grammar.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Classmate discussing part-time work\nLevel: B2\nConversation history:\nStudent: \"I work at a cafe on weekends.\" \nAssistant: \"That’s a good way to earn experience.\"\nFeedback: \"Nice short statement.\"\n\nCurrent student input: \"Yes, I learn how to make coffee drinks.\" \n\nYour task:\n- Reply.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That’s a valuable skill! Do you enjoy interacting with customers?",
+        "feedback": "Try: 'I am learning how to make coffee drinks.' or 'I learned how to make coffee drinks.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, it's interesting.",
+          "I love talking to people.",
+          "Sometimes it's tiring.",
+          "I meet many customers.",
+          "It helps me practice English."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond naturally.\n- Provide grammar tips.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Planning a school cultural day\nLevel: B2\nConversation history:\nStudent: \"We should represent different countries.\"\nAssistant: \"Great idea. How should we organize it?\"\nFeedback: \"Good suggestion.\"\n\nCurrent student input: \"Maybe we show food and traditional clothes from each place.\" \n\nYour task:\n- Continue scenario.\n- Grammar.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "That would be fantastic! It’ll be both educational and fun. Any country you’d like to represent?",
+        "feedback": "Try: 'Maybe we can show food and traditional clothing from each place.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "I want to show Japanese culture.",
+          "I’ll bring some Italian dishes.",
+          "Let’s represent many countries.",
+          "I love learning about different styles.",
+          "Yes, it will be a big success!"
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue.\n- Offer grammar guidance.\n- Decide on difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: Describing personal goals\nLevel: B2\nConversation history:\nStudent: \"I want to speak English more fluently by next year.\" \nAssistant: \"That's an excellent goal. How do you plan to achieve it?\"\nFeedback: \"Nice time reference.\"\n\nCurrent student input: \"I plan watch more English videos and practice daily.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Daily practice can make a huge difference. Consistency is key!",
+        "feedback": "Try: 'I plan to watch more English videos and practice daily.' Add 'to' before 'watch.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I will do it regularly.",
+          "I want to set a schedule.",
+          "I might join a speaking club.",
+          "I’ll keep a language journal.",
+          "Thank you for the advice."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Respond naturally.\n- Provide grammar correction.\n- Adjust difficulty if needed.\n\nRespond in JSON format.",
+      "input": "Scenario: Asking for feedback on a debate\nLevel: B2\nConversation history:\nStudent: \"I participated in the debate yesterday.\" \nAssistant: \"How did it go?\"\nFeedback: \"Nice use of past tense.\"\n\nCurrent student input: \"It go well, but I was nervous in beginning.\" \n\nYour task:\n- Continue.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Nerves are natural. What topic did you debate about?",
+        "feedback": "Try: 'It went well, but I was nervous at the beginning.' Use past tense 'went.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "We debated about climate change.",
+          "It was about technology in schools.",
+          "It was intense, but fun.",
+          "We discussed environmental policies.",
+          "I learned a lot from it."
+        ]
+      }
+    },
+    {
+      "instruction": "Your task:\n- Continue the scenario.\n- Provide grammar help.\n- Adjust difficulty.\n\nRespond in JSON format.",
+      "input": "Scenario: End-of-semester reflections\nLevel: B2\nConversation history:\nStudent: \"This semester was challenging, but I improved my English.\" \nAssistant: \"That’s fantastic progress. What areas do you still want to work on?\"\nFeedback: \"Good reflection.\"\n\nCurrent student input: \"I want practice listening more, especially fast speech.\" \n\nYour task:\n- Respond.\n- Grammar feedback.\n- Difficulty.\n\nRespond in JSON format.",
+      "output": {
+        "reply": "Listening to podcasts or watching videos can help you get used to faster speech.",
+        "feedback": "Try: 'I want to practice listening more, especially fast speech.' Include 'to.'",
+        "adjust_difficulty": "increase",
+        "possible_correct_responses": [
+          "Yes, I'll try English podcasts.",
+          "I might watch more movies.",
+          "I want to do that daily.",
+          "That’s a good suggestion.",
+          "I’ll look for practice resources."
+        ]
+      }
+    }
+  ]
+  

@@ -1,0 +1,1283 @@
+[
+    {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nAssistant: \"Hello! How can I help you with your train journey today?\"\nFeedback: \"\"\n\nCurrent student input: \"i want ticket\"",
+        "output": {
+          "reply": "Okay! I can help you get a train ticket. Where would you like to go on the train?",
+          "feedback": "That's a good start! Just remember to use 'a' before 'ticket'. You can say, 'I want *a* ticket.'",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "To the city",
+            "To see my grandma",
+            "To the beach",
+            "To Funland Park",
+            "I want to go to London"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"i want ticket\"\nAssistant: \"Okay! I can help you get a train ticket. Where would you like to go on the train?\"\nFeedback: \"That's a good start! You can say, 'I want *a* ticket.'\"\n\nCurrent student input: \"To the city big.\"",
+        "output": {
+          "reply": "The big city sounds like fun! Which big city are you planning to visit?",
+          "feedback": "Nice! We usually put the describing word before the noun, so you'd say 'to the *big city*'.",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "London",
+            "Paris",
+            "New York",
+            "Capital City",
+            "The one with the tall tower"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"To the city big.\"\nAssistant: \"The big city sounds like fun! Which big city are you planning to visit?\"\nFeedback: \"Nice! We usually say 'the big city'.\"\n\nCurrent student input: \"London city.\"",
+        "output": {
+          "reply": "London is a great choice! When would you like to go to London?",
+          "feedback": "Super! When you say 'London', we already know it's a city, so you can just say 'London'.",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "Tomorrow",
+            "Next Saturday",
+            "On my birthday",
+            "This Friday",
+            "In the summer holidays"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"London city.\"\nAssistant: \"London is a great choice! When would you like to go to London?\"\nFeedback: \"Super! You can just say 'London'.\"\n\nCurrent student input: \"Go on friday.\"",
+        "output": {
+          "reply": "Okay, this Friday! What time on Friday would you like your train to be?",
+          "feedback": "Great! To make a full sentence, you can say '*I want to* go on Friday.' Or, 'On Friday.' also works well in conversation.",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "In the morning",
+            "Around 10 o'clock",
+            "After lunch",
+            "Early",
+            "Midday"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Go on friday.\"\nAssistant: \"Okay, this Friday! What time on Friday would you like your train to be?\"\nFeedback: \"Great! Remember to say '*I want to* go on Friday.' or just 'On Friday.'\"\n\nCurrent student input: \"Morning time.\"",
+        "output": {
+          "reply": "Morning time it is! How many people are going on this trip?",
+          "feedback": "Perfect! 'Morning time' or 'In the morning' both work well and clearly tell me when you want to go.",
+          "adjust_difficulty": "increase",
+          "possible_correct_responses": [
+            "Just me",
+            "Two people",
+            "Me and my mom",
+            "Three of us",
+            "My family"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Morning time.\"\nAssistant: \"Morning time it is! How many people are going on this trip?\"\nFeedback: \"Perfect! 'Morning time' or 'In the morning' works well.\"\n\nCurrent student input: \"Me and my mom.\"",
+        "output": {
+          "reply": "That sounds like a lovely trip with your mom! So, that's one adult. How many children are going?",
+          "feedback": "Wonderful! That's clear. When talking about yourself and someone else, it's also common to say 'My mom and I.'",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "One child",
+            "Just me (child)",
+            "Two children",
+            "No children, just kidding, one child!",
+            "I am the child"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Me and my mom.\"\nAssistant: \"That sounds like a lovely trip with your mom! So, that's one adult. How many children are going?\"\nFeedback: \"Wonderful! You can also say, 'My mom and I.'\"\n\nCurrent student input: \"One kid thats me\"",
+        "output": {
+          "reply": "Okay, so one adult and one child. Got it! Will you need tickets to come back from London too, or just to go there?",
+          "feedback": "Great! Just a little tip: 'that's' is a contraction of 'that is', so it needs an apostrophe. You can say, 'One kid, *that's* me.'",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "Come back too",
+            "Just go there",
+            "Return ticket please",
+            "One way is fine",
+            "We need to come back"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"One kid thats me\"\nAssistant: \"Okay, so one adult and one child. Got it! Will you need tickets to come back from London too, or just to go there?\"\nFeedback: \"Great! You can say, 'One child, that's me.'\"\n\nCurrent student input: \"We come back.\"",
+        "output": {
+          "reply": "Alright, return tickets! When would you like to come back from London?",
+          "feedback": "Good! To show this is a plan for the future, you can say, 'We *will* come back.' or 'We *need to* come back.'",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "Same day, in the evening",
+            "Next day, on Saturday",
+            "On Sunday",
+            "Friday evening",
+            "Two days later"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"We come back.\"\nAssistant: \"Alright, return tickets! When would you like to come back from London?\"\nFeedback: \"Good! You can say, 'We *will* come back.' or 'We *need to* come back.'\"\n\nCurrent student input: \"Sunday afternoon\"",
+        "output": {
+          "reply": "Sunday afternoon for the return trip, okay! Would you like to choose a special seat, like by the window to see the views?",
+          "feedback": "Excellent! That's perfectly clear for the return time.",
+          "adjust_difficulty": "increase",
+          "possible_correct_responses": [
+            "Yes, window seat please!",
+            "No, any seat is fine.",
+            "Can we sit together?",
+            "Aisle seat is okay.",
+            "Near the front if possible."
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Sunday afternoon\"\nAssistant: \"Sunday afternoon for the return trip, okay! Would you like to choose a special seat, like by the window to see the views?\"\nFeedback: \"Excellent choice for the return time!\"\n\nCurrent student input: \"Yes window seat for see.\"",
+        "output": {
+          "reply": "A window seat is great for seeing everything! So, let's check: one adult and one child, return tickets to London. Going this Friday morning, and coming back Sunday afternoon, with window seats. Does that all sound correct?",
+          "feedback": "Lovely! It's a bit clearer if you say 'Yes, *a* window seat *to* see.' or 'Yes, *I'd like a* window seat *for seeing*.'",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "Yes, that's all correct!",
+            "Sounds perfect.",
+            "Yes, that's it.",
+            "All good.",
+            "Confirm those details."
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Yes window seat for see.\"\nAssistant: \"A window seat is great for seeing everything! So, let's check: one adult and one child, return tickets to London. Going this Friday morning, and coming back Sunday afternoon, with window seats. Does that all sound correct?\"\nFeedback: \"Lovely! You can say 'Yes, a window seat *to* see.' or 'Yes, *I'd like a* window seat.'\"\n\nCurrent student input: \"Yes all good.\"",
+        "output": {
+          "reply": "Wonderful! Will you be taking any big bags or suitcases on the train?",
+          "feedback": "Super! 'Yes, all good' is a clear and common way to agree.",
+          "adjust_difficulty": "increase",
+          "possible_correct_responses": [
+            "Just small backpacks.",
+            "One big suitcase.",
+            "No, not much luggage.",
+            "Two bags.",
+            "Mom has a suitcase."
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Yes all good.\"\nAssistant: \"Wonderful! Will you be taking any big bags or suitcases on the train?\"\nFeedback: \"Super!\"\n\nCurrent student input: \"Mom has a bag big.\"",
+        "output": {
+          "reply": "Okay, good to know about the big bag. Sometimes you can buy snacks or drinks on the train. Would you like to bring your own or buy some there?",
+          "feedback": "Alright! Remember, we usually say the describing word first, so 'Mom has a *big bag*.'",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "We will bring our own snacks.",
+            "Maybe buy a drink there.",
+            "Can we bring sandwiches?",
+            "What snacks do they have?",
+            "No snacks needed."
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Mom has a bag big.\"\nAssistant: \"Okay, good to know about the big bag. Sometimes you can buy snacks or drinks on the train. Would you like to bring your own or buy some there?\"\nFeedback: \"Alright! You can say 'Mom has a big bag.'\"\n\nCurrent student input: \"We bring own food.\"",
+        "output": {
+          "reply": "Bringing your own food is a great idea! Now, how would your mom like to get the tickets? They can be emailed, or you can pick them up at the station.",
+          "feedback": "That's smart! To show it's a plan, you can say 'We *will* bring *our* own food.'",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "Email the tickets, please.",
+            "We'll pick them up at the station.",
+            "Email is easier for Mom.",
+            "Station pickup is fine.",
+            "Which way is quicker?"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"We bring own food.\"\nAssistant: \"Bringing your own food is a great idea! Now, how would your mom like to get the tickets? They can be emailed, or you can pick them up at the station.\"\nFeedback: \"That's smart! You can say 'We *will* bring *our* own food.'\"\n\nCurrent student input: \"Email for mom easy.\"",
+        "output": {
+          "reply": "Okay, the tickets will be emailed to your mom. She will use her card to pay for them. Do you know what to do when you get to the train station on Friday?",
+          "feedback": "Great! To make that a full sentence, you could say 'Email *is* easy for Mom.' or 'Mom *finds* email easy.'",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "Look for our train.",
+            "Show our tickets.",
+            "Find the platform.",
+            "Mom knows what to do.",
+            "No, what should we do?"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Email for mom easy.\"\nAssistant: \"Okay, the tickets will be emailed to your mom. She will use her card to pay for them. Do you know what to do when you get to the train station on Friday?\"\nFeedback: \"Great! You can say 'Email is easy for Mom.' or 'Mom would prefer email.'\"\n\nCurrent student input: \"Find platform.\"",
+        "output": {
+          "reply": "That's right, you'll need to find the right platform for your train to London! There are usually big screens that tell you which one. Is there anything else I can help you with for your trip?",
+          "feedback": "Good job! That's a key step. In a full sentence, you could say 'We *need to* find *the* platform.'",
+          "adjust_difficulty": "increase",
+          "possible_correct_responses": [
+            "No, that's all, thank you!",
+            "What if we are late?",
+            "How long is the train ride?",
+            "Can I bring my teddy bear?",
+            "Is the train comfy?"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Find platform.\"\nAssistant: \"That's right, you'll need to find the right platform for your train to London! There are usually big screens that tell you which one. Is there anything else I can help you with for your trip?\"\nFeedback: \"Good job! You can say 'We need to find the platform.'\"\n\nCurrent student input: \"How long trip?\"",
+        "output": {
+          "reply": "The trip to London can take a few hours, maybe 2 or 3, depending on the train! It's a good time to look out the window or play a quiet game. Are you excited to go?",
+          "feedback": "Good question! To make it a full question, you can ask, 'How long *is the* trip?'",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "Yes, very excited!",
+            "I can't wait!",
+            "It sounds like fun!",
+            "What will I see from the window?",
+            "Will it be a fast train?"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"How long trip?\"\nAssistant: \"The trip to London can take a few hours, maybe 2 or 3, depending on the train! It's a good time to look out the window or play a quiet game. Are you excited to go?\"\nFeedback: \"Good question! You can ask, 'How long *is the* trip?'\"\n\nCurrent student input: \"Yes very excited.\"",
+        "output": {
+          "reply": "That's wonderful to hear! Your mom will get an email with all the ticket details. Just remember to be at the station a little early. Do you have any more questions before we finish?",
+          "feedback": "Great enthusiasm! Saying 'Yes, *I'm* very excited!' makes it a full sentence, but your way clearly expresses your excitement too!",
+          "adjust_difficulty": "increase",
+          "possible_correct_responses": [
+            "No more questions, thank you!",
+            "What should I wear?",
+            "Can we take pictures on the train?",
+            "Is there a toilet on the train?",
+            "Thank you for your help!"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Yes very excited.\"\nAssistant: \"That's wonderful to hear! Your mom will get an email with all the ticket details. Just remember to be at the station a little early. Do you have any more questions before we finish?\"\nFeedback: \"Great enthusiasm!\"\n\nCurrent student input: \"No more questions.\"",
+        "output": {
+          "reply": "Alright then! I hope you and your mom have a fantastic trip to London. Enjoy the train ride!",
+          "feedback": "Perfect! That's a clear way to say you're all set.",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "Thank you!",
+            "We will!",
+            "Bye!",
+            "Thanks for helping!",
+            "Okay, good!"
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nAssistant: \"Okay! I can help you get a train ticket. Where would you like to go on the train?\"\nFeedback: \"...\"\n\nCurrent student input: \"To grandma house.\"",
+        "output": {
+          "reply": "Going to Grandma's house sounds lovely! Does Grandma live in a particular town or city that the train goes to?",
+          "feedback": "That's sweet! To show it's her house, we usually say 'To Grandma*'s* house.'",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "She lives in Townsville.",
+            "It's called Green Hills.",
+            "Near the sea.",
+            "I think it's called Sunnyvale.",
+            "Mom knows the name."
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Morning time.\"\nAssistant: \"Morning time it is! How many people are going on this trip?\"\nFeedback: \"Perfect! 'Morning time' or 'In the morning' works well.\"\n\nCurrent student input: \"Four peoples.\"",
+        "output": {
+          "reply": "Four people, okay! Are they all adults, or are there some children too?",
+          "feedback": "Good number! The word 'people' already means more than one person, so we just say 'four *people*'.",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "Two adults and two children.",
+            "All adults.",
+            "One adult and three children.",
+            "Me, my brother, Mom, and Dad.",
+            "Two big people, two small people."
+          ]
+        }
+      },
+      {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nAssistant: \"Hello there! Thinking of a train adventure today?\"\nFeedback: \"\"\n\nCurrent student input: \"Can i go train?\"",
+        "output": {
+          "reply": "Yes, you can definitely go on a train! Where are you hoping the train will take you?",
+          "feedback": "Good question! It's a bit more natural to say, 'Can I go *on a* train?' or 'Can I *take a* train?'",
+          "adjust_difficulty": "maintain",
+          "possible_correct_responses": [
+            "To my cousin's house.",
+            "To the big Water Park.",
+            "To Storybook Village.",
+            "Somewhere with animals.",
+            "A place far away."
+          ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Can i go train?\"\nAssistant: \"Yes, you can definitely go on a train! Where are you hoping the train will take you?\"\nFeedback: \"Good question! You can also say, 'Can I travel by train?' or 'I'd like to go on a train.'\"\n\nCurrent student input: \"Not sure. Somewhere fun.\"",
+        "output": {
+            "reply": "Somewhere fun sounds like a great idea! To help me find a fun place, do you like beaches, mountains, or maybe a city with lots of cool buildings?",
+            "feedback": "That's perfectly fine! 'Not sure. Somewhere fun.' clearly tells me what you're thinking, even in short phrases.",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "I like beaches!",
+            "A big city sounds cool.",
+            "Mountains are nice.",
+            "Somewhere with a big park.",
+            "Where can I see stars?"
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Not sure. Somewhere fun.\"\nAssistant: \"Somewhere fun sounds like a great idea! To help me find a fun place, do you like beaches, mountains, or maybe a city with lots of cool buildings?\"\nFeedback: \"That's okay! We can find a fun place together.\"\n\nCurrent student input: \"City with cool buildings!\"",
+        "output": {
+            "reply": "A city with cool buildings it is! Do you have a specific city in mind, or shall I suggest one that's popular for train trips?",
+            "feedback": "Excellent choice! That's a great way to describe what you're interested in. It's clear and enthusiastic!",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "Suggest one please!",
+            "Is 'Metropolis' a real city?",
+            "My friend went to 'Bricktown'.",
+            "The one with the pointy tower.",
+            "A city not too far."
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"City with cool buildings!\"\nAssistant: \"A city with cool buildings it is! Do you have a specific city in mind, or shall I suggest one that's popular for train trips?\"\nFeedback: \"Excellent choice! Cities are full of adventures.\"\n\nCurrent student input: \"Suggest one pls.\"",
+        "output": {
+            "reply": "Okay! How about a trip to 'Adventure City'? It's known for its amazing skyline! When were you thinking of making this trip?",
+            "feedback": "Great! 'Pls' is a common short way to write 'please' in messages. Good job!",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "Next weekend!",
+            "Maybe in two weeks.",
+            "During school holidays.",
+            "On a Tuesday.",
+            "How about tomorrow?"
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Suggest one pls.\"\nAssistant: \"Okay! How about a trip to 'Adventure City'? It's known for its amazing skyline! When were you thinking of making this trip?\"\nFeedback: \"Great! 'Pls' is short for please, good job!\"\n\nCurrent student input: \"Next weekend. With who?\"",
+        "output": {
+            "reply": "Next weekend sounds like a plan! For the tickets, how many people will be travelling to Adventure City?",
+            "feedback": "Good questions! 'Next weekend.' is clear. 'With who?' is a common way to ask. You could also say 'Who with?'",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "Just me and my dad.",
+            "Three of us.",
+            "My whole family - four people!",
+            "One adult and one child.",
+            "Me and my best friend (and her mom)."
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Next weekend. With who?\"\nAssistant: \"Next weekend sounds like a plan! For the tickets, how many people will be travelling to Adventure City?\"\nFeedback: \"Good question about who! Let's figure out the number of travellers first.\"\n\nCurrent student input: \"One grown up one kid.\"",
+        "output": {
+            "reply": "Okay, one grown-up and one kid. Will this be a one-way trip to Adventure City, or will you need tickets to come back as well?",
+            "feedback": "Great! You can say 'One grown-up *and* one kid.' Adding 'and' makes it flow a bit better. 'Grown-up' is a good word for adult!",
+            "adjust_difficulty": "increase",
+            "possible_correct_responses": [
+            "We need to come back.",
+            "Return tickets, please.",
+            "Just one way for now.",
+            "Both ways!",
+            "Going there and coming home."
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"One grown up one kid.\"\nAssistant: \"Okay, one grown-up and one kid. Will this be a one-way trip to Adventure City, or will you need tickets to come back as well?\"\nFeedback: \"Perfect! 'Grown-up' is a great word for adult.\"\n\nCurrent student input: \"Back too. On sunday.\"",
+        "output": {
+            "reply": "Return tickets for Sunday, got it! So, going to Adventure City next weekend, and coming back on Sunday. Would you like the train journey to be in the morning, afternoon, or evening on those days?",
+            "feedback": "Very clear! For the first part, 'We need to come *back too*' or '*We need return tickets too*' sounds a bit more complete. Adding 'on Sunday' for the second part is perfect.",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "Morning to go, afternoon to come back.",
+            "Both ways in the morning.",
+            "Midday for both.",
+            "Evening to come back.",
+            "Any time is okay for us."
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Back too. On sunday.\"\nAssistant: \"Return tickets for Sunday, got it! So, going to Adventure City next weekend, and coming back on Sunday. Would you like the train journey to be in the morning, afternoon, or evening on those days?\"\nFeedback: \"Excellent! Adding 'on Sunday' is very clear.\"\n\nCurrent student input: \"Morning go, evening back.\"",
+        "output": {
+            "reply": "Morning to go, evening to return. Perfect! Some trains have quiet carriages. Is that something you might like, or are you happy with a regular seat?",
+            "feedback": "That's a very clear and efficient way to tell me your preference for times!",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "Regular seat is fine.",
+            "Quiet carriage sounds good.",
+            "What's a quiet carriage?",
+            "As long as we sit together.",
+            "No preference on that."
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Morning go, evening back.\"\nAssistant: \"Morning to go, evening to return. Perfect! Some trains have quiet carriages. Is that something you might like, or are you happy with a regular seat?\"\nFeedback: \"That's a clear way to say it!\"\n\nCurrent student input: \"Whats quiet car?\"",
+        "output": {
+            "reply": "A quiet carriage, or 'quiet car', is a part of the train where people try to be extra quiet – no loud talking or phone calls. It's for a more peaceful journey. Does that sound good, or would you prefer a regular seat?",
+            "feedback": "Good question! Remember to use an apostrophe for 'What's', which is short for 'What is'. So, '*What's* a quiet car?' It's always smart to ask if you don't know something!",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "Quiet car sounds nice.",
+            "No, regular seat is better.",
+            "Maybe quiet car for grown-up.",
+            "Let's try the quiet car.",
+            "We will be a bit noisy, so regular."
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Whats quiet car?\"\nAssistant: \"A quiet carriage, or 'quiet car', is a part of the train where people try to be extra quiet – no loud talking or phone calls. It's for a more peaceful journey. Does that sound good, or would you prefer a regular seat?\"\nFeedback: \"Good question! It's smart to ask if you don't know.\"\n\nCurrent student input: \"Regular seat is good.\"",
+        "output": {
+            "reply": "Regular seats it is! So, that's one adult and one child to Adventure City next weekend – morning train to go, evening train back on Sunday, regular seats. Does this all sound correct before we talk about how to get your tickets?",
+            "feedback": "Sounds good! That's a clear and correct sentence expressing your choice.",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "Yes, all correct!",
+            "Sounds perfect.",
+            "Actually, can we change the return day?",
+            "What if I want a window?",
+            "Yes, let's get tickets."
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Regular seat is good.\"\nAssistant: \"Regular seats it is! So, that's one adult and one child to Adventure City next weekend – morning train to go, evening train back on Sunday, regular seats. Does this all sound correct before we talk about how to get your tickets?\"\nFeedback: \"Okay, regular seats are great too!\"\n\nCurrent student input: \"Wait, can window seat?\"",
+        "output": {
+            "reply": "Yes, we can certainly try to get you window seats! It's a great way to see the sights. Would you like me to add a request for window seats for both of you?",
+            "feedback": "Good thought! It's okay to ask for changes. You can say 'Wait, can *we have a* window seat?' or 'Wait, can *I get a* window seat?'",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "Yes, window seats for both!",
+            "Just one window seat for me.",
+            "If it's not too much trouble.",
+            "That would be great.",
+            "Yes please!"
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Wait, can window seat?\"\nAssistant: \"Yes, we can certainly try to get you window seats! It's a great way to see the sights. Would you like me to add a request for window seats for both of you?\"\nFeedback: \"Good thought! It's okay to ask for changes. You can say 'Wait, can *we have a* window seat?'\"\n\nCurrent student input: \"Yes window for both.\"",
+        "output": {
+            "reply": "Okay, window seats for both requested! So, the grown-up will pay for the tickets. How would they like to receive them: by email to print, or collect them from a machine at the station?",
+            "feedback": "Excellent! To make it even clearer, you could say, 'Yes, *a* window *seat* for both,' or 'Yes, *window seats* for both.' Window seats are fun!",
+            "adjust_difficulty": "increase",
+            "possible_correct_responses": [
+            "Email is good.",
+            "Collect at station.",
+            "Which is easier?",
+            "Dad says email.",
+            "Print at home."
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Yes window for both.\"\nAssistant: \"Okay, window seats for both requested! So, the grown-up will pay for the tickets. How would they like to receive them: by email to print, or collect them from a machine at the station?\"\nFeedback: \"Excellent! Window seats are fun.\"\n\nCurrent student input: \"What if train missed?\"",
+        "output": {
+            "reply": "That's a very thoughtful question! If you miss the train, the grown-up should talk to the people at the station ticket office. Sometimes they can help you get on the next train. Is that something you worry about?",
+            "feedback": "Good question to think ahead! You can say, 'What if *we miss the* train?' Adding 'we' and 'the' makes it a full question.",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "A little bit worried.",
+            "No, just wondering.",
+            "Dad is always on time!",
+            "Okay, good to know.",
+            "Hope we don't miss it."
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"What if train missed?\"\nAssistant: \"That's a very thoughtful question! If you miss the train, the grown-up should talk to the people at the station ticket office. Sometimes they can help you get on the next train. Is that something you worry about?\"\nFeedback: \"Good question to think ahead! You can say, 'What if *we miss the* train?'\"\n\nCurrent student input: \"No, just wondering. Email tickets.\"",
+        "output": {
+            "reply": "Okay, not to worry then, and tickets by email it is! Your grown-up will get an email with the tickets to print. Is there a special reason for your trip to Adventure City? Like a birthday or just for fun?",
+            "feedback": "Good! 'No, just wondering' is perfect. For the second part, saying 'Email tickets, *please*.' or '*Could we have the* tickets *by* email?' sounds a bit more like a request. Email is a popular choice.",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "Just for fun!",
+            "It's my birthday trip!",
+            "To see the tall buildings.",
+            "A surprise for Dad.",
+            "We want to ride the fast train."
+            ]
+        }
+        },
+        {
+        "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+        "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"No, just wondering. Email tickets.\"\nAssistant: \"Okay, not to worry then, and tickets by email it is! Your grown-up will get an email with the tickets to print. Is there a special reason for your trip to Adventure City? Like a birthday or just for fun?\"\nFeedback: \"Good! Email is a popular choice.\"\n\nCurrent student input: \"Is it fast train?\"",
+        "output": {
+            "reply": "Many trains to big cities like Adventure City are quite fast and smooth! It makes the journey exciting. Does it need to be an extra-special fast train, or is a regular fast one good?",
+            "feedback": "Good question! Adding 'a' makes it sound more natural: 'Is it *a* fast train?'",
+            "adjust_difficulty": "maintain",
+            "possible_correct_responses": [
+            "Regular fast is good!",
+            "The fastest one please!",
+            "As long as it's fun.",
+            "Does it have big windows?",
+            "I like fast trains."
+            ]
+        }
+        },
+        {
+            "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+            "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Is it fast train?\"\nAssistant: \"Many trains to big cities like Adventure City are quite fast and smooth! It makes the journey exciting. Does it need to be an extra-special fast train, or is a regular fast one good?\"\nFeedback: \"Good question! You can also ask 'Is it *a* fast train?'\"\n\nCurrent student input: \"Regular fast good. Can bring dog?\"",
+            "output": {
+                "reply": "Regular fast train, excellent! About bringing a dog, usually only small pets in a special carrier are allowed, and sometimes guide dogs. Big dogs often can't travel on these trains. Would you need to bring a pet?",
+                "feedback": "Good questions! For the first part, you can say 'A regular fast *train is* good.' And for the second, 'Can *I* bring *my* dog?' is a great way to ask.",
+                "adjust_difficulty": "maintain",
+                "possible_correct_responses": [
+                "No, just asking for a friend.",
+                "My dog is small, he has carrier.",
+                "Oh, okay, no dog then.",
+                "It's a guide dog.",
+                "Good to know, thank you."
+                ]
+            }
+            },
+            {
+            "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+            "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Regular fast good. Can bring dog?\"\nAssistant: \"Regular fast train, excellent! About bringing a dog, usually only small pets in a special carrier are allowed, and sometimes guide dogs. Big dogs often can't travel on these trains. Would you need to bring a pet?\"\nFeedback: \"Good to know! For the dog, you can say, 'Can *I* bring *my* dog?'\"\n\nCurrent student input: \"No dog this time. Is there toilet?\"",
+            "output": {
+                "reply": "Okay, no dog for this trip. And yes, trains that travel longer distances, like to Adventure City, almost always have toilets on board. Is there anything else you're curious about regarding the train or the trip?",
+                "feedback": "Okay! 'No dog this time' is clear. For your question, it's good to ask 'Is there *a* toilet?' It's helpful to know about toilets!",
+                "adjust_difficulty": "maintain",
+                "possible_correct_responses": [
+                "Is there food on the train?",
+                "How much will tickets cost (for Mom)?",
+                "What should I pack for the trip?",
+                "No, that's all my questions.",
+                "Are the seats comfy?"
+                ]
+            }
+            },
+            {
+            "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+            "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"No dog this time. Is there toilet?\"\nAssistant: \"Okay, no dog for this trip. And yes, trains that travel longer distances, like to Adventure City, almost always have toilets on board. Is there anything else you're curious about regarding the train or the trip?\"\nFeedback: \"Good question! It's helpful to know about toilets.\"\n\nCurrent student input: \"How much money for mom?\"",
+            "output": {
+                "reply": "The price can change depending on how far in advance the tickets are bought and if there are special offers. I can tell your mom where to see the exact price when she gets the booking information. Is that okay?",
+                "feedback": "That's a good question for your mom! You can ask, 'How much money *will it cost* for Mom?' or 'How much *is it* for Mom?'",
+                "adjust_difficulty": "maintain",
+                "possible_correct_responses": [
+                "Yes, that's okay.",
+                "Can you give a little idea?",
+                "Is it very expensive?",
+                "Mom will check.",
+                "Alright."
+                ]
+            }
+            },
+            {
+            "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+            "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"How much money for mom?\"\nAssistant: \"The price can change depending on how far in advance the tickets are bought and if there are special offers. I can tell your mom where to see the exact price when she gets the booking information. Is that okay?\"\nFeedback: \"That's a good question for your mom! You can say, 'How much money *will it cost* for Mom?'\"\n\nCurrent student input: \"Okay mom check. All done?\"",
+            "output": {
+                "reply": "Yes, Mom can check the price. We've arranged everything for your trip to Adventure City! One last check: anything else at all I can help with?",
+                "feedback": "Great! For the first part, you can say, 'Okay, Mom *can* check' or 'Mom *will* check.' 'All done?' is a common way to ask if we've finished. Almost all done!",
+                "adjust_difficulty": "increase",
+                "possible_correct_responses": [
+                "No, all set!",
+                "Thank you very much!",
+                "I'm excited to go!",
+                "Just remind me the day.",
+                "Nope, we are good."
+                ]
+            }
+            },
+            {
+            "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+            "input": "Scenario: Ordering a train ticket\nLevel: BL\nConversation history:\nStudent: \"Okay mom check. All done?\"\nAssistant: \"Yes, Mom can check the price. We've arranged everything for your trip to Adventure City! One last check: anything else at all I can help with?\"\nFeedback: \"Great! Almost all done.\"\n\nCurrent student input: \"Thank you for help!\"",
+            "output": {
+                "reply": "You're very welcome! I hope you and your grown-up have an absolutely amazing time in Adventure City and a wonderful train journey!",
+                "feedback": "That's very polite! It's perfect to say 'Thank you for *your* help!' Adding 'your' makes it complete.",
+                "adjust_difficulty": "maintain",
+                "possible_correct_responses": [
+                "Thank you, bye!",
+                "We will have fun!",
+                "Goodbye!",
+                "Can't wait!",
+                "See you!"
+                ]
+            }
+            },
+            {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Hi! Looking to book a train journey today?\"\nFeedback: \"\"\n\nCurrent student input: \"Hey, need to book a train tix.\"",
+                "output": {
+                  "reply": "Hey there! I can definitely help you with that. Where are you planning to go?",
+                  "feedback": "Sure thing! 'Tix' is a common casual way to say tickets, and 'need to book' is quite clear. For slightly more formal situations, you could say 'I need to book train tickets.' It's good you stated your need directly!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "To Melbourne for the weekend.",
+                    "City for a gig.",
+                    "Newcastle to see a mate.",
+                    "Just to Central for uni.",
+                    "Not sure yet, somewhere cool."
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Hey, need to book a train tix.\"\nAssistant: \"Hey there! I can definitely help you with that. Where are you planning to go?\"\nFeedback: \"Sure thing! 'Tix' is a common way to say tickets. For more formal situations, 'tickets' is great.\"\n\nCurrent student input: \"To Melbourne. ASAP, like next weekend?\"",
+                "output": {
+                  "reply": "Melbourne next weekend, got it! That would be around May 17th or 18th. Are you thinking of a specific day to head down?",
+                  "feedback": "Okay! 'To Melbourne' clearly states your destination. Using 'ASAP' and 'like next weekend?' effectively communicates urgency and your preferred timing. Well done!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Probably Friday evening, the 16th.",
+                    "Saturday morning, May 17th.",
+                    "Either Friday or Saturday.",
+                    "What's the cheapest day next weekend?",
+                    "Sunday morning is fine too."
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"To Melbourne. ASAP, like next weekend?\"\nAssistant: \"Melbourne next weekend, got it! That would be around May 17th or 18th. Are you thinking of a specific day to head down?\"\nFeedback: \"Okay, 'ASAP' and 'like next weekend' makes sense for urgency!\"\n\nCurrent student input: \"Saturday morning, May 17th. Just me.\"",
+                "output": {
+                  "reply": "Alright, one ticket to Melbourne for Saturday morning, May 17th. Will you need a return ticket as well, or is it a one-way trip?",
+                  "feedback": "Excellent! 'Saturday morning, May 17th. Just me.' is perfectly clear and concise, giving all the necessary details. Great job!",
+                  "adjust_difficulty": "increase",
+                  "possible_correct_responses": [
+                    "Yeah, return on Sunday evening.",
+                    "One way for now, not sure when I'm back.",
+                    "Return Monday morning.",
+                    "How much extra is a return?",
+                    "Open return if possible?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Saturday morning, May 17th. Just me.\"\nAssistant: \"Alright, one ticket to Melbourne for Saturday morning, May 17th. Will you need a return ticket as well, or is it a one-way trip?\"\nFeedback: \"Clear and concise, perfect!\"\n\nCurrent student input: \"Return Sunday arvo. Got any student discounts?\"",
+                "output": {
+                  "reply": "Okay, returning Sunday afternoon (arvo!). Yes, student discounts are often available. Do you have a valid student ID you can present if required?",
+                  "feedback": "'Arvo' for afternoon is classic Aussie slang, and 'Got any student discounts?' is a common, clear way to ask. Good job using colloquial language effectively and asking an important question!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yep, got my uni ID.",
+                    "Sure do.",
+                    "My student card is current.",
+                    "What kind of discount is it?",
+                    "Yes, I have one."
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Return Sunday arvo. Got any student discounts?\"\nAssistant: \"Okay, returning Sunday afternoon (arvo!). Yes, student discounts are often available. Do you have a valid student ID you can present if required?\"\nFeedback: \"'Arvo' is classic Aussie slang for afternoon, love it!\"\n\nCurrent student input: \"Yep, got my uni ID. Any chance of a seat with a plug point?\"",
+                "output": {
+                  "reply": "Great about the uni ID for the discount! I can definitely request a seat near a power outlet for you. They're pretty handy. So that's one student return to Melbourne, out Saturday morning May 17th, back Sunday afternoon, with a power outlet request. Sound right?",
+                  "feedback": "Excellent! 'Yep, got my uni ID' is a perfectly understandable and common informal response. Your question 'Any chance of a seat with a plug point?' is well-phrased and practical. Good thinking!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Sounds perfect!",
+                    "Yep, that's all correct.",
+                    "Sweet, confirm that.",
+                    "What's the damage? (How much?)",
+                    "Actually, can I leave a bit later on Saturday?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Hi! How can I assist with your train booking?\"\nFeedback: \"\"\n\nCurrent student input: \"Yo, I wanna get a ticket to Splendour. It's in Byron right?\"",
+                "output": {
+                  "reply": "Yo! Yeah, Splendour in the Grass is usually around the Byron Bay area. Are you looking for travel dates around the festival, typically late July?",
+                  "feedback": "Gotcha! 'Yo' is a very informal greeting, and 'wanna' is a common casual form of 'want to'. Your sentences clearly express what you need and ask for confirmation. Well done!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yeah, for those dates in July.",
+                    "What are the exact festival dates this year?",
+                    "Need to get there the day before it starts.",
+                    "Just checking options for now.",
+                    "Can I book for a group?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Yo, I wanna get a ticket to Splendour. It's in Byron right?\"\nAssistant: \"Yo! Yeah, Splendour in the Grass is usually around the Byron Bay area. Are you looking for travel dates around the festival, typically late July?\"\nFeedback: \"Gotcha. 'Wanna' is casual for 'want to'. Just so you know, Splendour is often in July.\"\n\nCurrent student input: \"Yeah, for July. How many of us? Uh, maybe 3 or 4.\"",
+                "output": {
+                  "reply": "Okay, for Splendour in July, for 3 or 4 people. It's good to get a final number for group bookings. Can you confirm how many, and I can check availability?",
+                  "feedback": "Sounds good! That's a very natural and clear way to confirm the month and express uncertainty about the group size. Perfectly understandable!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Let's say 4 for now.",
+                    "Okay, confirmed 3 people.",
+                    "Can I book 3 and add one later?",
+                    "What if one person cancels?",
+                    "Just checking for myself first then."
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Yeah, for July. How many of us? Uh, maybe 3 or 4.\"\nAssistant: \"Okay, for Splendour in July, for 3 or 4 people. It's good to get a final number for group bookings. Can you confirm how many, and I can check availability?\"\nFeedback: \"No worries, figuring out group numbers can take a sec!\"\n\nCurrent student input: \"Confirmed 4 ppl. Is there like, wifi on the train? Need to sort accom.\"",
+                "output": {
+                  "reply": "Alright, 4 people for the trip. Many intercity trains do have Wi-Fi, though it can sometimes be a bit patchy. It's useful for sorting things like accommodation! So, return tickets for 4 to the Byron area in July?",
+                  "feedback": "Alright! Using 'ppl' for people and 'accom' for accommodation are common and clear abbreviations. Using 'like' as a filler is common in speech; you could also say 'Is there Wi-Fi...?' Your needs are well communicated!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yep, return tickets for all 4.",
+                    "How long is the train ride from Sydney?",
+                    "Is there a food car?",
+                    "Can we reserve seats together?",
+                    "What's the luggage limit?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Ready to plan a train trip?\"\nFeedback: \"\"\n\nCurrent student input: \"Need a ticket to Wollongong for a day trip. What are the off-peak times?\"",
+                "output": {
+                  "reply": "A day trip to Wollongong, nice choice! Off-peak times usually avoid the morning and afternoon weekday commuter rush. Are you planning to travel on a weekday or a weekend?",
+                  "feedback": "Good questions! You could start with 'I need a ticket...' to make it a full sentence, but your meaning is perfectly clear. 'What are the off-peak times?' is a well-phrased and smart question.",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Probably a weekday, like next Wednesday.",
+                    "Weekend, maybe this coming Saturday.",
+                    "What's cheaper, weekday or weekend off-peak?",
+                    "If I travel after 9:30 am on a weekday, is that off-peak?",
+                    "Any day next week is fine."
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Need a ticket to Wollongong for a day trip. What are the off-peak times?\"\nAssistant: \"A day trip to Wollongong, nice choice! Off-peak times usually avoid the morning and afternoon weekday commuter rush. Are you planning to travel on a weekday or a weekend?\"\nFeedback: \"Good question about off-peak times – can save you some money!\"\n\nCurrent student input: \"Weekday, say next Wednesday. If I leave after 9:30am is that cool for off-peak?\"",
+                "output": {
+                  "reply": "Leaving after 9:30 AM on a weekday like Wednesday, May 14th, is generally considered off-peak, so that should be cool. And for the return from Wollongong, what time would you be thinking?",
+                  "feedback": "Yep! 'Weekday, say next Wednesday' clearly specifies your preference. Asking 'If I leave after 9:30am is that cool for off-peak?' is a perfectly good and informal way to confirm. Well done!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Probably head back around 4pm.",
+                    "Before the evening rush, maybe 3:30pm?",
+                    "What's the last off-peak train back?",
+                    "Evening is fine, like 6pm.",
+                    "Flexible on the return time."
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"How can I help with your train travel plans?\"\nFeedback: \"\"\n\nCurrent student input: \"I need to change my ticket. Is that even possible?\"",
+                "output": {
+                  "reply": "It often depends on the type of ticket you originally purchased. Some are flexible, others less so. Do you have your booking reference number handy so I can look it up?",
+                  "feedback": "That's a perfectly clear and well-phrased set of sentences. 'Is that even possible?' clearly expresses your concern. Good job!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yeah, it's XYZ123.",
+                    "I think it was a standard fare.",
+                    "I don't have it on me right now, can I check generally?",
+                    "What if I just want to change the time?",
+                    "Is there a fee for changes?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"I need to change my ticket. Is that even possible?\"\nAssistant: \"It often depends on the type of ticket you originally purchased. Some are flexible, others less so. Do you have your booking reference number handy so I can look it up?\"\nFeedback: \"Good question. Ticket flexibility varies a lot.\"\n\nCurrent student input: \"It's booking ref ABC789. I wanna travel a day later.\"",
+                "output": {
+                  "reply": "Okay, let me check reference ABC789. You'd like to travel a day later than originally booked. What was the original travel date and your destination?",
+                  "feedback": "Perfect for providing the reference! 'It's booking ref ABC789' is clear. 'I wanna travel a day later' uses a common casual form of 'want to' and clearly states your request.",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Original was May 10th to City, now want May 11th.",
+                    "Was meant to go to Katoomba tomorrow, now want Saturday.",
+                    "It was for the 9am train to Gosford this Friday.",
+                    "Can I change the destination too, or just the date?",
+                    "Will it cost extra to change?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Planning a trip? Let's get your train tickets sorted.\"\nFeedback: \"\"\n\nCurrent student input: \"Heya. How much is it roughly for a train to Canberra from Sydney?\"",
+                "output": {
+                  "reply": "Heya! The price for a train to Canberra from Sydney can vary a bit depending on how far in advance you book and the time of travel. Are you thinking of specific dates yet?",
+                  "feedback": "'Heya' is a nice, friendly greeting! Your question 'How much is it roughly for a train to Canberra from Sydney?' is perfectly phrased and clear. Excellent!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Maybe in about two weeks, mid-week.",
+                    "Just a ballpark for a standard adult return.",
+                    "Sometime next month, for a weekend.",
+                    "Are there saver fares if I book early?",
+                    "Is it cheaper than flying?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Heya. How much is it roughly for a train to Canberra from Sydney?\"\nAssistant: \"Heya! The price for a train to Canberra from Sydney can vary a bit depending on how far in advance you book and the time of travel. Are you thinking of specific dates yet?\"\nFeedback: \"'Heya' is a friendly greeting! Good to get an idea of costs.\"\n\nCurrent student input: \"Just a ballpark for a standard adult return. No specific dates yet.\"",
+                "output": {
+                  "reply": "Okay, for a ballpark standard adult return from Sydney to Canberra, you might be looking anywhere from $70 to $150, again, depending on factors like how early you book. Does that help as a rough guide?",
+                  "feedback": "That's very clear! 'Just a ballpark...' is a common and effective way to ask for an estimate, and you've clearly specified the ticket type and your current flexibility with dates. Good use of language!",
+                  "adjust_difficulty": "increase",
+                  "possible_correct_responses": [
+                    "Yeah, that gives me an idea, thanks.",
+                    "What's the travel time like?",
+                    "Are there usually food options on that train?",
+                    "Okay, maybe I should look at specific dates then.",
+                    "Is there a student price for that route?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Hi, need help with a train booking?\"\nFeedback: \"\"\n\nCurrent student input: \"Yeah, trying to get to Bathurst for the uni open day. What's the best way?\"",
+                "output": {
+                  "reply": "Heading to Bathurst for a uni open day, cool! The train is a good option. Do you know the date of the open day so we can look at train schedules?",
+                  "feedback": "Sounds like a plan! 'Trying to get to...' is perfectly fine and natural, or you could say 'I'm trying to get to...'. 'What's the best way?' is an excellent and clear question.",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "It's on Saturday, June 7th.",
+                    "I think it's the first weekend of next month.",
+                    "I need to check the date actually.",
+                    "Are there early morning trains to get there on time?",
+                    "Is it better to go the night before?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Yeah, trying to get to Bathurst for the uni open day. What's the best way?\"\nAssistant: \"Heading to Bathurst for a uni open day, cool! The train is a good option. Do you know the date of the open day so we can look at train schedules?\"\nFeedback: \"Smart move checking travel for an open day.\"\n\nCurrent student input: \"It's Sat June 7th. Wanna get there by 9am. Possible?\"",
+                "output": {
+                  "reply": "Saturday, June 7th, aiming for a 9 AM arrival in Bathurst. That's definitely possible but would likely mean an early start from Sydney. Are you okay with an early train, or would you consider travelling up the night before?",
+                  "feedback": "Great job providing specific details! Using 'Sat' for Saturday and 'wanna' for 'want to' is common in informal chat and perfectly understandable. 'Possible?' is a concise way to ask.",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Early start is okay if it gets me there.",
+                    "What time would I have to leave Sydney?",
+                    "Maybe going the night before is less stress.",
+                    "Are there places to stay near the station in Bathurst?",
+                    "How long does that train journey take?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Let's sort out your train tickets. Where to and when?\"\nFeedback: \"\"\n\nCurrent student input: \"Me and my mates wanna go to the Blue Mountains next Saturday. Like 5 of us.\"",
+                "output": {
+                  "reply": "A trip to the Blue Mountains with your mates next Saturday (that'd be May 17th) for 5 people sounds like fun! Are you looking for return tickets for the same day?",
+                  "feedback": "Good job giving the details! 'Me and my mates' is a common informal way to say it (you could also say 'My mates and I' for a more formal tone). 'Wanna' is fine for 'want to'. 'Like 5 of us' clearly indicates the number, even with the filler 'like'.",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yeah, same day return.",
+                    "We might stay overnight, what are options?",
+                    "Is there a group discount for 5?",
+                    "Can we all get seats together?",
+                    "What time do trains run till, coming back?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Me and my mates wanna go to the Blue Mountains next Saturday. Like 5 of us.\"\nAssistant: \"A trip to the Blue Mountains with your mates next Saturday (that'd be May 17th) for 5 people sounds like fun! Are you looking for return tickets for the same day?\"\nFeedback: \"'Mates' and 'wanna' are perfectly fine. Good to specify the number.\"\n\nCurrent student input: \"Yeah same day. Is there a specific station best for lookouts, like Katoomba?\"",
+                "output": {
+                  "reply": "Same day return for 5 to the Blue Mountains. Yes, Katoomba is a very popular station as it's close to Echo Point and the Three Sisters, great for lookouts! So, tickets to Katoomba?",
+                  "feedback": "Excellent question and perfectly phrased! 'Yeah same day' confirms clearly, and your question about the station is specific and uses an example effectively. Well done!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yep, Katoomba sounds good.",
+                    "Are there other good stations for walks?",
+                    "How frequent are trains to Katoomba?",
+                    "What time should we aim to get there?",
+                    "Cool, book us for Katoomba."
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Hi! Need to book a train?\"\nFeedback: \"\"\n\nCurrent student input: \"Looking for a flexible ticket to Brisbane, might need to change dates. Possible?\"",
+                "output": {
+                  "reply": "Yes, flexible tickets are usually an option, though they might cost a bit more. They offer peace of mind if you think your dates might change. When are you roughly thinking of travelling to Brisbane?",
+                  "feedback": "That's very clear and well-phrased. Starting with 'Looking for...' is perfectly natural (you could also say 'I'm looking for...'). 'Might need to change dates. Possible?' clearly explains your situation and question. Good job!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Sometime in the next month or so.",
+                    "No firm dates yet, just exploring.",
+                    "How much more are flexible tickets usually?",
+                    "What are the conditions for changing a flexi ticket?",
+                    "Can I book one now and confirm dates later?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Looking for a flexible ticket to Brisbane, might need to change dates. Possible?\"\nAssistant: \"Yes, flexible tickets are usually an option, though they might cost a bit more. They offer peace of mind if you think your dates might change. When are you roughly thinking of travelling to Brisbane?\"\nFeedback: \"Good thinking to ask for flexible options upfront.\"\n\nCurrent student input: \"Sometime in June. Is it cheaper to travel mid-week with a flexi ticket?\"",
+                "output": {
+                  "reply": "For travel in June to Brisbane with a flexible ticket: sometimes mid-week travel can be a little less busy, but the core benefit and price of a flexi ticket is usually more about the changeability than specific day-of-week discounts. Are you looking for a one-way or return flexible ticket?",
+                  "feedback": "Excellent! 'Sometime in June' clearly states your timeframe, and 'Is it cheaper to travel mid-week with a flexi ticket?' is a well-formed and insightful question. Great job!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Return flexible ticket.",
+                    "Just one-way for now.",
+                    "How long is the journey to Brisbane by train?",
+                    "Are there sleeper options on that route?",
+                    "Okay, let's look at a return flexi then."
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Hi! Got a train journey in mind?\"\nFeedback: \"\"\n\nCurrent student input: \"Urgently need a train to Goulburn for tmrw. Is that doable?\"",
+                "output": {
+                  "reply": "Goulburn for tomorrow, Saturday May 10th - let's check that for you! Yes, there are usually services. Are you looking for a one-way ticket or will you need to come back the same day or Sunday?",
+                  "feedback": "Okay! You've clearly expressed your urgent need. 'Tmrw' for tomorrow is a common abbreviation. 'Is that doable?' is a good, concise way to ask. You could also say 'I urgently need...', but your sentence is fine for informal chat.",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "One-way, gotta get there ASAP.",
+                    "Return same day if possible, late evening.",
+                    "What time's the earliest I can leave Glenfield or Central?",
+                    "Return Sunday morning actually.",
+                    "How long does that trip take?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Urgently need a train to Goulburn for tmrw. Is that doable?\"\nAssistant: \"Goulburn for tomorrow, Saturday May 10th - let's check that for you! Yes, there are usually services. Are you looking for a one-way ticket or will you need to come back the same day or Sunday?\"\nFeedback: \"Okay, 'doable' is a good way to ask about possibility for urgent travel. 'Tmrw' for tomorrow is a common text abbreviation.\"\n\nCurrent student input: \"One way. Cheapest option pls, not fussed about time.\"",
+                "output": {
+                  "reply": "Alright, one-way to Goulburn tomorrow, focusing on the cheapest option. I'll look for the best value fare for you. Are you travelling light or will you have much luggage?",
+                  "feedback": "Excellent! Using 'pls' for please and saying 'not fussed about time' are perfectly clear and common in casual conversation. You've efficiently communicated all your key preferences.",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Just a backpack.",
+                    "One medium suitcase.",
+                    "Travelling super light.",
+                    "Does luggage cost extra?",
+                    "What are the luggage restrictions?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Hey! How can I help with your train booking today?\"\nFeedback: \"\"\n\nCurrent student input: \"Thinking of heading to the Gold Coast end of May for a break. What are train options like from Sydney?\"",
+                "output": {
+                  "reply": "A break on the Gold Coast at the end of May sounds great! Trains run from Sydney, often an overnight XPT service to Casino with a coach connection, or direct to Brisbane with a local connection. Are you looking for the fastest route, most scenic, or best budget option?",
+                  "feedback": "That sounds like a great plan! Your phrasing is perfectly clear and natural. You could also start with 'I'm thinking of...', but 'Thinking of...' works well. Your question about train options is well-formed. Good job!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Best budget option, definitely.",
+                    "What's the overnight XPT like?",
+                    "How long does it take roughly?",
+                    "Is there a direct train all the way to Gold Coast?",
+                    "Maybe compare budget vs. speed."
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Thinking of heading to the Gold Coast end of May for a break. What are train options like from Sydney?\"\nAssistant: \"A break on the Gold Coast at the end of May sounds great! Trains run from Sydney, often an overnight XPT service to Casino with a coach connection, or direct to Brisbane with a local connection. Are you looking for the fastest route, most scenic, or best budget option?\"\nFeedback: \"Good question! Train options to the Gold Coast involve a bit of a journey.\"\n\nCurrent student input: \"Overnight XPT sounds interesting. Does it have sleeper cabins or just seats?\"",
+                "output": {
+                  "reply": "The XPT usually offers both seats and sleeper cabins for longer journeys like Sydney to Casino. Sleepers are more comfortable for an overnight trip but do cost extra. Are you interested in a price for a sleeper, or a seat?",
+                  "feedback": "Excellent! That's a clear statement followed by a well-phrased and relevant question. 'Does it have sleeper cabins or just seats?' is perfectly structured. Great job!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "How much extra for a sleeper, roughly?",
+                    "Just a seat is fine if it's much cheaper.",
+                    "Are the seats comfy enough to sleep in?",
+                    "What facilities are in the sleeper cabins?",
+                    "Let's check seat price first."
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Need to book a train? Let me know where you're going!\"\nFeedback: \"\"\n\nCurrent student input: \"Yeah, gotta get to a job interview in Parramatta next Tuesday morning. Can I use my Opal card or do I need a proper ticket?\"",
+                "output": {
+                  "reply": "A job interview in Parramatta next Tuesday (May 13th), good luck! For travel within the Sydney Trains network like Glenfield to Parramatta, you can definitely just use your Opal card. No need for a separate pre-booked ticket. Do you know roughly what time your interview is?",
+                  "feedback": "Great question, and you've provided all the context! 'Gotta' is a common casual way of saying 'have got to' or 'need to'. Your question about the Opal card is perfectly clear.",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "It's at 10am.",
+                    "Phew, that's easier. Interview is at 11:30.",
+                    "How long will it take to get there from Glenfield?",
+                    "Good to know, thanks!",
+                    "What's the best station in Parramatta for [specific address]?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Yeah, gotta get to a job interview in Parramatta next Tuesday morning. Can I use my Opal card or do I need a proper ticket?\"\nAssistant: \"A job interview in Parramatta next Tuesday (May 13th), good luck! For travel within the Sydney Trains network like Glenfield to Parramatta, you can definitely just use your Opal card. No need for a separate pre-booked ticket. Do you know roughly what time your interview is?\"\nFeedback: \"Great question about Opal vs. booked tickets for local trips!\"\n\nCurrent student input: \"Interview's at 10am. How long will the trip take from Glenfield? Wanna make sure I'm not late.\"",
+                "output": {
+                  "reply": "To get from Glenfield to Parramatta for a 10 AM interview, you'd want to allow around 45-60 minutes for the train journey itself, plus time to get to/from stations. I'd recommend checking a trip planner on the day for exact times and any trackwork. Would you like me to find a suggested departure time to aim for?",
+                  "feedback": "Good job providing the interview time! 'Interview's' uses the possessive correctly. 'How long will the trip take from Glenfield?' is a perfect question. 'Wanna' is a common casual form for 'want to'. Very clear communication!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yeah, what time should I leave Glenfield?",
+                    "Is there often trackwork on that line?",
+                    "Okay, I'll plan to leave by 8:45am latest.",
+                    "Thanks, that's helpful.",
+                    "Which platform does it usually go from at Glenfield?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Hi there! Where can I help you travel to by train?\"\nFeedback: \"\"\n\nCurrent student input: \"My band's playing a gig in Newtown next Friday night. Three of us need to get there with gear. Is that cool on the train?\"",
+                "output": {
+                  "reply": "A gig in Newtown next Friday (May 16th) sounds awesome! Travelling with musical gear on Sydney Trains is usually fine, as long as it's not excessively large and you can manage it safely without blocking aisles or doorways, especially during busy periods. What kind of gear are we talking about?",
+                  "feedback": "Cool! You've clearly explained the situation. 'My band's playing...' uses the contraction correctly. 'Is that cool on the train?' is a common, informal way to ask if it's allowed or possible. Good, clear communication!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Guitars in cases and a small amp.",
+                    "A drum kit (just kidding, mostly guitars).",
+                    "Can we take it during peak hour if we have to?",
+                    "Are there any size restrictions for luggage/gear?",
+                    "Cool, just guitars and a pedalboard."
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"My band's playing a gig in Newtown next Friday night. Three of us need to get there with gear. Is that cool on the train?\"\nAssistant: \"A gig in Newtown next Friday (May 16th) sounds awesome! Travelling with musical gear on Sydney Trains is usually fine, as long as it's not excessively large and you can manage it safely without blocking aisles or doorways, especially during busy periods. What kind of gear are we talking about?\"\nFeedback: \"Cool! Good to check about gear on trains.\"\n\nCurrent student input: \"Just guitars in hard cases & a couple of backpacks. Should be fine. So, 3 returns to Newtown for Friday evening?\"",
+                "output": {
+                  "reply": "Guitars in hard cases and backpacks should be manageable. So, 3 return tickets to Newtown for next Friday evening, May 16th. Since it's a local Sydney trip, you guys can just use your Opal cards. Or are you looking to pre-purchase something specific?",
+                  "feedback": "Sounds good! Using '&' for 'and' is common in informal writing. 'Should be fine' shows good judgment. Your question 'So, 3 returns to Newtown for Friday evening?' is perfectly clear. Well done!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Oh right, Opal is easier. Cool.",
+                    "My mates might not have Opal, can they buy paper tickets?",
+                    "What's the last train back from Newtown on a Friday?",
+                    "Sweet, Opal it is then.",
+                    "Thanks for the gear info!"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Ready to book a train adventure?\"\nFeedback: \"\"\n\nCurrent student input: \"I need to cancel a ticket I bought for next month. What's the process? It's for the XPT to Melbourne.\"",
+                "output": {
+                  "reply": "Cancelling an XPT ticket to Melbourne is often possible, but refund conditions depend on the fare type you purchased (e.g., Saver, Flexi). Do you have your booking reference number? I can guide you on where to check the specific conditions or process the cancellation if applicable.",
+                  "feedback": "Your sentences are perfectly clear and well-phrased! You've stated your need, asked a direct question about the process, and provided essential details. Excellent!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "My booking ref is M123PQR.",
+                    "I think it was a Saver fare.",
+                    "Will I get a full refund?",
+                    "Is there a cancellation fee?",
+                    "Where on the website do I do it?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"I need to cancel a ticket I bought for next month. What's the process? It's for the XPT to Melbourne.\"\nAssistant: \"Cancelling an XPT ticket to Melbourne is often possible, but refund conditions depend on the fare type you purchased (e.g., Saver, Flexi). Do you have your booking reference number? I can guide you on where to check the specific conditions or process the cancellation if applicable.\"\nFeedback: \"Okay, cancellations can be tricky. The fare type is key.\"\n\nCurrent student input: \"Booking ref is M123PQR. Pretty sure it was a Saver. Am I gonna lose all my money?\"",
+                "output": {
+                  "reply": "Thanks for the reference M123PQR. With Saver fares, you often can get a refund, but there might be a cancellation fee deducted, so you might not get the full amount back. The exact amount would be detailed in the terms for that specific fare. Would you like me to check the general policy for XPT Saver fares?",
+                  "feedback": "Good job providing the reference. 'Pretty sure' is a natural way to express uncertainty, and 'Am I gonna lose all my money?' (with 'gonna' for 'going to') clearly and naturally voices your concern. Well communicated!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yeah, what's the usual fee?",
+                    "Can I change it to another date instead of cancelling?",
+                    "Okay, where can I see the exact terms for my ticket?",
+                    "That's annoying, but good to know.",
+                    "How do I actually request the cancellation then?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Hi! Where are you off to by train?\"\nFeedback: \"\"\n\nCurrent student input: \"Thinking of a day trip to Kiama this Sunday. Is it packed on weekends?\"",
+                "output": {
+                  "reply": "Kiama is a beautiful spot for a day trip this Sunday, May 11th! It can get quite popular on sunny weekends, especially around the Blowhole. Trains should run regularly. Are you concerned about crowds on the train or at Kiama itself?",
+                  "feedback": "That's a great way to start the conversation! 'Thinking of...' is natural (you could also say 'I'm thinking of...'). 'Is it packed on weekends?' is a perfectly phrased and relevant question. Good job!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Both, really. When's best to travel to avoid packed trains?",
+                    "Just wondering if I'll get a seat.",
+                    "Is it still worth going if it's busy?",
+                    "Are there quieter spots near Kiama accessible by train?",
+                    "What time are the first trains down there?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Thinking of a day trip to Kiama this Sunday. Is it packed on weekends?\"\nAssistant: \"Kiama is a beautiful spot for a day trip this Sunday, May 11th! It can get quite popular on sunny weekends, especially around the Blowhole. Trains should run regularly. Are you concerned about crowds on the train or at Kiama itself?\"\nFeedback: \"Good question! Kiama is a popular weekend destination.\"\n\nCurrent student input: \"Mostly worried about getting a seat on the train. Should I book ahead or just Opal tap on?\"",
+                "output": {
+                  "reply": "For the South Coast Line to Kiama, you can't pre-book seats; it's a tap-on with your Opal card service. To improve your chances of getting a seat, especially on a Sunday, travelling a bit earlier in the morning or outside the absolute peak return times might help. What time were you thinking of heading down?",
+                  "feedback": "Excellent follow-up! You've clearly expressed your concern and asked a very specific and well-structured question comparing your options. Perfectly phrased!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Maybe around 9am from Central?",
+                    "What's considered early?",
+                    "Are the trains usually frequent on Sundays?",
+                    "Okay, no booking needed then, just Opal. Thanks!",
+                    "If it's full, do I just stand?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Hey there, planning a train journey?\"\nFeedback: \"\"\n\nCurrent student input: \"Yeah, need a ticket to Armidale for a uni residential school. It's for 2 weeks in July. Any deals for longer stays?\"",
+                "output": {
+                  "reply": "Heading to Armidale for a two-week uni residential school in July, that's a decent trip! There aren't usually specific 'longer stay' deals on the train ticket itself, but booking your return ticket in advance might get you a better price than two one-ways. Do you have your exact dates in July yet?",
+                  "feedback": "Good job providing all the key information! 'Need a ticket...' is clear (you could also say 'I need...'). Your question 'Any deals for longer stays?' is relevant and well-phrased.",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Starts July 14th, finishes July 25th.",
+                    "Not exact dates, but mid-July for two weeks.",
+                    "What's the XPT like to Armidale?",
+                    "Is there a student fare for that route?",
+                    "How much luggage can I take on that train?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Yeah, need a ticket to Armidale for a uni residential school. It's for 2 weeks in July. Any deals for longer stays?\"\nAssistant: \"Heading to Armidale for a two-week uni residential school in July, that's a decent trip! There aren't usually specific 'longer stay' deals on the train ticket itself, but booking your return ticket in advance might get you a better price than two one-ways. Do you have your exact dates in July yet?\"\nFeedback: \"Good question about deals for longer stays.\"\n\nCurrent student input: \"Dates are July 14 to July 25. Can I take my guitar? It's in a hard case.\"",
+                "output": {
+                  "reply": "Okay, July 14th to July 25th for Armidale. Yes, you can usually take a guitar in a hard case on the XPT, it counts as part of your luggage allowance. You'd want to make sure it's stowed safely. Ready to look at fares for those dates?",
+                  "feedback": "Excellent! You've provided the exact dates clearly, and your question 'Can I take my guitar? It's in a hard case.' is specific and well-formed. Great communication!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yeah, let's check fares.",
+                    "Is there a specific luggage car or do I keep it with me?",
+                    "Is there wifi or charging for that long trip?",
+                    "What are the food options on board?",
+                    "Roughly how long is that journey?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Hi! Where are we sending you by train today?\"\nFeedback: \"\"\n\nCurrent student input: \"My mate and I wanna go to the footy at Accor Stadium next Saturday. What's the best station and ticket situation?\"",
+                "output": {
+                  "reply": "Footy at Accor Stadium next Saturday (May 17th) with your mate, great plan! The best station is Olympic Park, which often has direct event trains. For tickets, you can usually just tap on and off with your Opal card, as it's part of integrated event transport. What time does the game start?",
+                  "feedback": "Great! 'My mate and I' is good phrasing. 'Wanna' is a common casual form of 'want to'. Using 'footy' is natural. Your questions 'What's the best station and ticket situation?' are clear and direct. Well done!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Game's at 7:30pm.",
+                    "Cool, so just Opal is fine? No need to book?",
+                    "Are there usually massive queues for trains after the game?",
+                    "How often do the direct trains run from Central?",
+                    "Is there parking if we decide to drive instead?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"My mate and I wanna go to the footy at Accor Stadium next Saturday. What's the best station and ticket situation?\"\nAssistant: \"Footy at Accor Stadium next Saturday (May 17th) with your mate, great plan! The best station is Olympic Park, which often has direct event trains. For tickets, you can usually just tap on and off with your Opal card, as it's part of integrated event transport. What time does the game start?\"\nFeedback: \"'Footy' and 'mate' are spot on! Good to check event transport.\"\n\nCurrent student input: \"Game is 7:30pm. So just use Opal, no stress. Sweet. How early should we get there to avoid chaos?\"",
+                "output": {
+                  "reply": "Yep, just use your Opal cards, no stress! For a 7:30 PM game, to avoid the biggest rush and soak up some atmosphere, arriving at Olympic Park by 6:00-6:30 PM is usually a good idea. Does that work for you guys?",
+                  "feedback": "Excellent! You've confirmed the time and your understanding about Opal. 'No stress. Sweet.' are common and effective informal phrases. 'How early should we get there to avoid chaos?' is a great, practical question. Your communication is very clear!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yeah, 6:30pm sounds good.",
+                    "Maybe even a bit earlier to grab food.",
+                    "Are there places to eat around the stadium?",
+                    "Cool, thanks for the tip!",
+                    "What about getting home after? Still just Opal?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Ready to sort your next train trip?\"\nFeedback: \"\"\n\nCurrent student input: \"Is there any way to get a super cheap ticket to Melbourne like, next month? Broke student vibes here.\"",
+                "output": {
+                  "reply": "Totally get the 'broke student vibes'! For super cheap to Melbourne next month (June), your best bet is to look for XPT Saver fares as far in advance as possible, and be flexible with travel days – mid-week is often cheaper than Friday/Sunday. Are your dates in June totally flexible?",
+                  "feedback": "Your question is very clear and relatable! Using 'like' as a filler is common in speech (you can often omit it). 'Broke student vibes here' is a very casual and effective way to explain your budget. Good job expressing yourself naturally!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yeah, pretty flexible, any day mid-week.",
+                    "What's the absolute cheapest you've seen it go for?",
+                    "Are overnight trains cheaper?",
+                    "Is there a student discount on top of Saver fares?",
+                    "How far in advance should I book for best price?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"Is there any way to get a super cheap ticket to Melbourne like, next month? Broke student vibes here.\"\nAssistant: \"Totally get the 'broke student vibes'! For super cheap to Melbourne next month (June), your best bet is to look for XPT Saver fares as far in advance as possible, and be flexible with travel days – mid-week is often cheaper than Friday/Sunday. Are your dates in June totally flexible?\"\nFeedback: \"Relatable! Flexibility is key for budget travel.\"\n\nCurrent student input: \"Super flexible. Mid-week is perfect. Is there like a standby option or last minute deals ever?\"",
+                "output": {
+                  "reply": "While there isn't usually a formal 'standby' option like with airlines, sometimes deals can pop up, but booking a Saver fare in advance for a mid-week day in June is generally your most reliable path to a cheap ticket. Shall I search for the best mid-week Saver fares in June for you?",
+                  "feedback": "Great that you're flexible! 'Mid-week is perfect' is clear. For your question 'Is there like a standby option...', 'like' is a common filler (you could say 'Is there a standby option...?'). It's a well-phrased question about last-minute options. Good job!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Yeah, please search for those mid-week savers.",
+                    "What dates in June currently look cheapest?",
+                    "How does the XPT Saver compare to bus prices?",
+                    "Okay, no standby. Let's look at advanced savers then.",
+                    "If I find a cheap one, how quick do I need to book it?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nAssistant: \"Hi! Planning a train getaway?\"\nFeedback: \"\"\n\nCurrent student input: \"I need to get my cat to my new place in Newcastle. Can I take her on the train? She's in a carrier.\"",
+                "output": {
+                  "reply": "Moving to Newcastle with your cat, exciting! Yes, you can typically travel with a small domestic pet, like a cat in a suitable, secure carrier, on NSW TrainLink regional services. You'd need to ensure she's contained and doesn't disturb other passengers. When are you planning to make the move?",
+                  "feedback": "That's perfectly phrased! You've clearly stated your need and provided all the important details, including that your cat is in a carrier. Excellent and clear communication!",
+                  "adjust_difficulty": "maintain",
+                  "possible_correct_responses": [
+                    "Probably the weekend after next, so around May 24th.",
+                    "Does she need her own ticket?",
+                    "Are there any specific rules for the carrier size?",
+                    "That's a relief! Moving next Saturday.",
+                    "Will I need to book a specific spot for her carrier?"
+                  ]
+                }
+              },
+              {
+                "instruction": "Your task:\n- Reply naturally about ordering a train ticket.\n- Ask an easy follow‑up question so the chat continues.\n- Give simple grammar feedback.\n- Decide whether to increase or decrease difficulty.\n\nRespond in JSON format.",
+                "input": "Scenario: Ordering a train ticket\nLevel: B1\nConversation history:\nStudent: \"I need to get my cat to my new place in Newcastle. Can I take her on the train? She's in a carrier.\"\nAssistant: \"Moving to Newcastle with your cat, exciting! Yes, you can typically travel with a small domestic pet, like a cat in a suitable, secure carrier, on NSW TrainLink regional services. You'd need to ensure she's contained and doesn't disturb other passengers. When are you planning to make the move?\"\nFeedback: \"Good to check pet policies! Small pets in carriers are often okay.\"\n\nCurrent student input: \"Moving Saturday May 24th. Does she need her own ticket, or do I just pay for mine?\"",
+                "output": {
+                  "reply": "For Saturday, May 24th to Newcastle: generally, you don't need a separate ticket for your cat if she's in an approved carrier and travels with you. You'd just purchase your own ticket. It's always good to double-check with staff at the station too. So, one adult ticket to Newcastle on May 24th?",
+                  "feedback": "Excellent! You've clearly stated the moving date, and your question 'Does she need her own ticket, or do I just pay for mine?' is perfectly structured to find out about pet ticketing. Great job!",
+                  "adjust_difficulty": "increase",
+                  "possible_correct_responses": [
+                    "Yes, one adult ticket please.",
+                    "What are the rules for the carrier itself?",
+                    "Great, that makes it easier.",
+                    "Can I book my ticket online with a pet noted?",
+                    "About what time do trains run to Newcastle on a Saturday?"
+                  ]
+                }
+              }
+
+]
